@@ -199,7 +199,8 @@ def mouse_event(event):
 
     
 # ============================== Set up and make figure ============================== 
-fig, axes = plt.subplots(10, 1, sharex=True, figsize=(10,7.5))
+fig, ax0 = plt.subplots(11, 1, sharex=True, figsize=(10,7.5), gridspec_kw = {'height_ratios':[0.3,1,1,1,1,1,1,1,1,1,1]}) 
+axes = [ax0[1], ax0[2], ax0[3],ax0[4],ax0[5],ax0[6],ax0[7],ax0[8],ax0[9],ax0[10],ax0[0]]
 cid = fig.canvas.mpl_connect('button_press_event', mouse_event)
 
 ACEcol = 'k'
@@ -571,7 +572,7 @@ if ICEcase:
     
 # ============================== Add in HSS flags ============================== 
 if plotHSS:
-    catStyles = {'G':[-0.1, 'r'] , 'V':[0.,'b'], 'X':[0.,'m'], 'D':[.1,'orange']}
+    catStyles = {'G':[-0.1, 'r'] , 'V':[0.,'b'], 'X':[0.,'orange'], 'D':[.1,'maroon']}
     
     HSSdata = np.genfromtxt('HSSsort.dat', dtype=str)
     plotlims = axes[0].get_xlim()
@@ -580,21 +581,19 @@ if plotHSS:
 
     yrst = pltst.year
     yrLen = (datetime.datetime(yrst+1,1,1,0,0,0) - datetime.datetime(yrst,1,1,0,0,0)).total_seconds()
-    roughstart = yrst + (datetime.datetime(yrst, pltst.month, pltst.day,0,0,0) - datetime.datetime(yrst-1,12,31,0,0,0)).total_seconds() / yrLen - 0.0
+    roughstart = yrst + (datetime.datetime(yrst, pltst.month, pltst.day,0,0,0) - datetime.datetime(yrst-1,12,31,0,0,0)).total_seconds() / yrLen - 0.005
 
     yren = plten.year
     yrLen = (datetime.datetime(yren+1,1,1,0,0,0) - datetime.datetime(yren,1,1,0,0,0)).total_seconds()
-    roughend = yren + (datetime.datetime(yren, plten.month, plten.day,0,0,0) - datetime.datetime(yren-1,12,31,0,0,0)).total_seconds() / yrLen + 0.0
+    roughend = yren + (datetime.datetime(yren, plten.month, plten.day,0,0,0) - datetime.datetime(yren-1,12,31,0,0,0)).total_seconds() / yrLen + 0.005
 
     HSSidxA = np.where((HSSdata[:,1].astype(float) > roughstart) & (HSSdata[:,1].astype(float) < roughend))
     HSSidxB = np.where((HSSdata[:,0].astype(float) > roughstart) & (HSSdata[:,0].astype(float) < roughend))
     HSSidx  = np.unique(np.concatenate(HSSidxA+HSSidxB))
     myHSScats = []
     
-    HSSax = fig.add_axes([0.1, 0.95, 0.75, 0.03]) 
-    HSSax.axis('off')
-    xl = axes[0].get_xlim()
-    HSSax.set_xlim(xl)
+    axes[-1].axis('off')
+    axes[-1].set_ylim(-0.2, 0.1)
     for idx in HSSidx:
         myCat = HSSdata[idx,2]
         dy = catStyles[myCat][0]
@@ -606,8 +605,7 @@ if plotHSS:
         if myCat == 'D':
             st_tm = datetime.datetime.strptime(HSSdata[idx,3]+'T'+HSSdata[idx,4], "%Y-%m-%dT%H:%M:%S" ) 
             en_tm = st_tm + datetime.timedelta(hours=2)           
-        HSSax.fill_between([st_tm, en_tm], [dy-0.1,dy-0.1], [dy,dy], facecolor=catStyles[myCat][1])
-    HSSax.set_ylim(-0.25, 0.25)
+        axes[-1].fill_between([st_tm, en_tm], [dy-0.1,dy-0.1], [dy,dy], facecolor=catStyles[myCat][1])
            
     
 # ============================== Labels and other plotting fun time ============================== 
@@ -700,7 +698,7 @@ axes[9].set_ylabel('Beta')
 axes[9].xaxis.set_major_formatter(mdates.DateFormatter("%d %b\n%H:%M"))
 #_ = plt.xticks(rotation=45) 
 if addLabels:
-    plt.subplots_adjust(hspace=0.1,left=0.1,right=0.85,top=0.95,bottom=0.1)
+    plt.subplots_adjust(hspace=0.1,left=0.1,right=0.85,top=0.99,bottom=0.1)
 else:
     plt.subplots_adjust(hspace=0.1,left=0.1,right=0.99,top=0.99,bottom=0.1)
 axes[9].text(0.06, 0.05, myYr, transform = fig.transFigure)
