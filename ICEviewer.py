@@ -624,7 +624,8 @@ if plotHSS:
 
     HSSidxA = np.where((HSSdata[:,1].astype(float) > roughstart) & (HSSdata[:,1].astype(float) < roughend))
     HSSidxB = np.where((HSSdata[:,0].astype(float) > roughstart) & (HSSdata[:,0].astype(float) < roughend))
-    HSSidx  = np.unique(np.concatenate(HSSidxA+HSSidxB))
+    HSSidxC = np.where((HSSdata[:,0].astype(float) < roughstart) & (HSSdata[:,1].astype(float) > roughend))
+    HSSidx  = np.unique(np.concatenate(HSSidxA+HSSidxB+HSSidxC))
     myHSScats = []
     
     axes[-1].axis('off')

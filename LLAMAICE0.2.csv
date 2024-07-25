@@ -25,79 +25,118 @@
 24,-,1996-08-07T08:23,,1996-08-07T11:59,1996-08-08T04:59,-,1996-08-08T10:18,2,-,1,1,-,2,N,N,-,A,Sheath fairly messy but otherwise straightforward
 25,26,1996-12-24T01:26,,1996-12-24T03:07,1996-12-24T13:41,-,1996-12-24T16:23,2,-,1,1,-,1,N,N,X,A,Could be mini FR before sheath? Mixed is sheath from interaction with next case.
 26,25,1996-12-24T13:41,,1996-12-24T16:23,1996-12-25T11:24,-,-,1,-,1,1,-,-,N,N,-,A,Relatively smooth event
-27,-,1997-01-10T00:52,,1997-01-10T04:47,1997-01-11T02:00,-,-,1,-,1,3,-,-,N,Y?,GX,A,Could split in middle? SIR/HSS behind but interacting?
-28,-,1997-02-09T12:50,,1997-02-10T02:52,1997-02-10T18:28,-,-,1,-,1,2,-,-,N,N,X,A,Weak but straightforward
-29,-,1997-04-10T17:45,,1997-04-11T06:00,1997-04-11T14:56,-,1997-04-11T19:00,2,-,2,2,-,2,N,Y,X,A,SIR/HSS behind
-30,-,1997-04-21T10:11,,1997-04-21T15:42,1997-04-23T01:40,-,1997-04-23T10:30,2,-,2,2,-,3,N,N,X,A,Turbulent. Hard to ID bounds
-31,32,1997-05-15T01:15,,1997-05-15T10:00,1997-05-15T23:29,-,1997-05-16T03:13,0,-,0,2,-,3,N,N,GX,A,Could move mixed earlier?
-32,31,1997-05-16T03:13,,1997-05-16T06:01,1997-05-16T13:26,-,1997-05-16T15:55,2,-,1,2,-,2,N,N,G,A,Weak but relatively smooth B
-33,-,1997-05-26T09:09,,1997-05-26T16:12,1997-05-27T06:20,-,1997-05-27T13:24,1,-,1,1,-,3,N,N,-,A,Mostly smooth
+27,-,1997-01-10T00:52,,1997-01-10T04:47,1997-01-10T18:20,1997-01-11T00:50,1997-01-11T03:06,1,-,1,3,-,-,N,Y?,GX,A,Could split in middle? SIR/HSS behind but interacting?
+28,-,1997-02-09T12:50,1997-02-09T21:16,1997-02-10T02:52,1997-02-10T18:28,-,-,1,-,1,2,-,-,N,N,X,A,Weak but straightforward
+29,-,1997-04-10T17:45,1997-04-11T06:00,1997-04-11T08:18,1997-04-11T14:56,-,1997-04-11T19:00,2,-,2,2,-,2,N,Y,X,A,SIR/HSS behind
+30,-,1997-04-21T10:11,,1997-04-21T15:42,1997-04-22T11:38,1997-04-23T01:40,1997-04-23T10:30,2,-,2,2,-,3,N,N,X,A,Turbulent. Hard to ID bounds
+31,32,1997-05-15T01:15,1997-05-15T05:21,1997-05-15T10:00,1997-05-15T23:29,-,1997-05-16T03:13,0,-,0,2,-,3,N,N,GX,A,Could move mixed earlier?
+32,31,1997-05-16T03:13,1997-05-16T06:01,1997-05-16T08:26,1997-05-16T13:26,-,1997-05-16T15:55,2,-,1,2,-,2,N,N,G,A,Weak but relatively smooth B
+33,-,1997-05-26T09:09,1997-05-26T16:12,1997-05-26T21:16,1997-05-27T06:20,-,1997-05-27T13:24,1,-,1,1,-,3,N,N,-,A,Mostly smooth
 34,-,-,,1997-06-09T06:18,1997-06-09T23:01,-,-,-,-,3,3,-,-,N?,N,X,A,Not confident in anything. Could be two FR? Might have sheath?
 35,-,1997-06-19T00:32,,1997-06-19T07:24,1997-06-19T16:00,1997-06-20T22:29,-,2,-,1,2,2,-,N,N,X,A,Extended smooth B with minimal rot = leg?
-36,-,1997-07-15T03:10,,1997-07-15T09:00,1997-07-15T21:31,-,1997-07-16T11:00,2,-,1,2,-,1,N,N,-,A,Sheath could start later.
-37,-,1997-08-03T10:10,,1997-08-03T13:55,1997-08-03T20:26,1997-08-03T23:38,1997-08-04T02:15,2,-,1,3,2,3,N,N,X,A,Basing sheath of n but could be later. Kink in FR B is moving to leg? Too smooth for mixed.
-38,-,1997-08-17T01:56,,1997-08-17T05:3,1997-08-17T17:26,-,1997-08-17T19:33,2,-,2,-,3,2,N,N,X,A,Not clear why other cats say that is sheath start. Weak case.
+36,-,1997-07-15T03:10,1997-07-15T06:11,1997-07-15T09:00,1997-07-15T21:31,1997-07-16T11:00,-,2,-,1,2,-,1,N,N,-,A,Sheath could start later.
+37,-,1997-08-03T10:10,1997-08-03T13:00,1997-08-03T13:55,1997-08-03T20:26,1997-08-03T23:38,1997-08-04T02:15,2,-,1,3,2,3,N,N,X,A,Basing sheath of n but could be later. Kink in FR B is moving to leg? Too smooth for mixed.
+38,-,1997-08-17T01:56,1997-08-17T04:50,1997-08-17T05:35,1997-08-17T17:26,-,1997-08-17T19:33,2,-,2,-,3,2,N,N,X,A,Not clear why other cats say that is sheath start. Weak case.
 39,-,1997-09-03T08:38,,1997-09-03T13:26,1997-09-03T20:41,-,-,2,-,2,1,-,-,N,Y,GX,A,HSS behind. Not sure on sheath. Might be embedded in HSS/behind SIR?
-40,-,1997-09-18T00:30,,1997-09-18T04:07,1997-09-19T04:00,-,1997-09-19T23:59,1,-,1,2,-,3,N,N,X,A,Turbulent and big but weak. Could have little FR right behind?
-41,-,1997-09-21T16:51,,1997-09-18T04:07,1997-09-22T12:20,-,1997-09-22T17:46,2,-,1,2,-,2,N,N,X,A,Sheath hard to interpret. Extra bit could be leg? Pretty smooth.
+40,-,1997-09-18T00:30,,1997-09-18T04:07,1997-09-19T03:32,-,-,1,-,1,2,-,3,N,N,X,A,Turbulent and big but weak. Could have little FR right behind?
+41,-,1997-09-21T16:51,1997-09-21T22:21,1997-09-22T01:30,1997-09-22T12:20,-,1997-09-22T17:46,2,-,1,2,-,2,N,N,X,A,Sheath hard to interpret. Extra bit could be leg? Pretty smooth.
 42,-,1997-10-01T01:41,,1997-10-01T17:00,1997-10-02T23:00,-,-,1,-,2,1,-,-,N,N?,X,AW,Data gaps mean only B on front side. V a little high after. could be tail of HSS? Or not.
 43,-,1997-10-10T16:12,,1997-10-10T22:00,1997-10-11T14:33,-,1997-10-12T02:18,3,-,1,3,-,2,N,N,X,A,RC says 2 FR but don't see first one (in sheath). Super messy in sheath. Multiple features.
 44,-,1997-10-27T01:38,,1997-10-27T10:35,1997-10-28T04:57,-,-,3,-,2,2,-,-,N,N,X,A,Weak case. Hard to say much with confidence
-45,-,1997-11-06T22:25,,1997-11-07T06:00,1997-11-08T04:48,-,1997-11-08T19:23,1,-,2,3,-,3,N,N,X,-,Lots of bends in FR. Not certain how to split. Lepping has as two FR.
+45,-,1997-11-06T22:25,,1997-11-07T06:00,1997-11-08T05:56,1997-11-08T14:26,1997-11-08T19:23,1,-,2,3,-,3,N,N,X,-,Lots of bends in FR. Not certain how to split. Lepping has as two FR.
 46,47,1997-11-22T09:12,,1997-11-22T18:51,1997-11-23T12:50,-,1997-11-23T19:00,0,-,1,2,-,2,N,N,X,-,Interacting with next case?
 47,46,1997-11-23T12:50,,1997-11-24T06:51,1997-11-25T00:00,-,1997-11-25T07:53,1,-,2,2,-,3,N,N,-,-,Interacting with prev case? 
 48,49,1997-12-10T04:33,,1997-12-10T18:39,1997-12-11T10:14,-,1997-12-11T13:15,0,-,1,2,-,2,N,N,X,-,Interacting with next case?
 49,48,1997-12-11T10:14,,1997-12-11T13:15,1997-12-11T23:52,-,-,2,-,2,1,-,-,N,N,-,-,Weak case but probably a thing. Interacting with prev?
 50,-,1997-12-30T01:13,,1997-12-30T09:35,1997-12-30T17:18,1997-12-31T06:45,1997-12-31T08:51,1,-,2,3,3,3,N,N,X,A,Turbulent but think ID'ed all the features.
-51,52,1998-01-06T13:29,,1998-01-07T02:23,1998-01-08T07:28,-,1998-01-08T15:49,1,-,1,2,-,2,N,N,X,W,Some gaps in Wind data. Interacting with next?
+51,52,1998-01-06T13:29,1998-01-06T22:50,1998-01-07T02:23,1998-01-08T07:28,-,1998-01-08T15:49,1,-,1,2,-,2,N,N,X,W,Some gaps in Wind data. Interacting with next?
 52,51,-,,1998-01-08T15:49,1998-01-08T21:11,-,1998-01-08T23:58,-,-,1,2,-,3,N,N,X,-,Interacting with prev case? Small but smooth. Too far from next case for interaction?
 53,-,-,,1998-01-09T08:23,1998-01-09T20:38,-,-,-,-,3,3,-,-,N,N,-,-,Weak but probably a thing
 54,55,1998-01-20T07:08,,1998-01-20T17:43,1998-01-21T04:00,-,-,3,-,2,2,-,-,N,N,X,-,Think is separate from next case
 55,54,1998-01-21T04:00,,1998-01-21T07:00,1998-01-22T01:06,-,1998-01-22T10:50,2,-,2,3,-,2,N,N,-,-,Attempted to split complicated FR. Could be leg?
-56,-,1998-01-28T16:00,,1998-01-29T13:12,1998-01-30T23:08,-,1998-01-31T02:08,0,-,3,1,-,2,N,N,-,-,Sheath/FR split could be one of several points. Or mini FR in sheath.
+56,-,1998-01-28T16:00,1998-01-29T13:12,1998-01-29T20:00,1998-01-30T06:24,1998-01-30T23:08,1998-01-31T02:08,0,-,3,1,-,2,N,N,-,-,Sheath/FR split could be one of several points. Or mini FR in sheath.
 57,-,-,,1998-02-02T13:13,1998-02-03T12:38,-,1998-02-04T00:00,3,-,3,3,-,3,N,N,X,-,FR is all leg? If a thing at all. Mixed or second FR until next case? 
-58,-,1998-02-04T00:00,,1998-02-04T04:48,1998-02-05T03:51,1998-02-06T02:44,1998-02-06T08:04,1,-,1,3,2,2,N,N,X,-,Attempted to split long FR to include leg
+58,-,1998-02-04T00:00,,1998-02-04T04:48,1998-02-05T22:30,-,1998-02-06T08:04,1,-,1,3,2,2,N,N,X,-,Attempted to split long FR to include leg
 59,-,1998-02-17T06:28,,1998-02-17T10:00,1998-02-17T20:39,-,1998-02-18T03:34,2,-,1,2,-,2,N,N,-,-,Weak sheath. Think too far to interact with next case?
-60,-,1998-02-18T07:50,,1998-02-18T21:35,1998-02-19T04:54,1998-02-18T21:35,-,2,-,3,3,2,-,N,N,X,-,Sheath/FR hard to distinguish. Think has leg encounter?
+60,-,1998-02-18T07:50,1998-02-18T14:52,1998-02-18T21:35,1998-02-19T04:54,1998-02-20T00:29,-,2,-,3,3,2,-,N,N,X,-,Sheath/FR hard to distinguish. Think has leg encounter?
 61,-,1998-03-04T11:02,,1998-03-04T14:38,1998-03-05T20:29,-,1998-03-06T07:10,1,-,1,2,-,3,N,N,X,-,Fairly straightforward case
-62,-,1998-03-06T17:46,,1998-03-06T11:59,1998-03-07T09:36,-,1998-03-07T16:48,3,-,2,2,-,3,N,N,-,-,Weak case. Sheath guess based on T. Fairly smooth B rot.
+
+62,-,1998-03-06T11:59,1998-03-06T17:46,1998-03-06T22:16,1998-03-07T09:36,-,1998-03-07T16:48,3,-,2,2,-,3,N,N,-,-,Weak case. Sheath guess based on T. Fairly smooth B rot.
+
 63,-,1998-03-25T10:48,,1998-03-25T16:12,1998-03-26T03:00,-,1998-03-26T09:11,2,-,1,3,-,1,Y?,N?,-,-,Guessing on mixed split. N is elevated in FR and v slightly high behind but not super fast
+
 64,65,1998-03-30T22:00,,1998-03-31T11:59,1998-04-01T17:40,-,-,2,-,1,1,-,-,M?,N,-,-,Kink in FR profile? Interact with next case.
+
 65,64,1998-04-01T17:40,,1998-04-01T21:07,1998-04-02T11:48,-,1998-04-02T16:41,2,-,3,2,3,-,N,N,-,-,Weak case. Interacting with prev case?
+
 66,-,-,,1998-04-11T23:00,1998-04-13T03:59,-,-,-,-,3,3,-,-,N,N,X,-,Very turbulent and weak. Smoothish B rot only in middle of FR? Mixed on both sides?
+
 67,69,1998-05-01T21:21,,1998-05-02T11:49,1998-05-03T16:47,-,1998-05-04T02:21,1,-,2,2,-,3,N?,N,X,-,Enh in Wind n only? Think mixed extends to next (real) case
+
 68,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Don't think that this is a thing.
+
 69,67; 70,1998-05-04T02:21,,1998-05-04T09:50,1998-05-04T21:24,-,1998-05-05T05:06,0,-,1,2,-,2,N,N,X,-,Strong sheath. Interacts with prev (real) and next case
+
 70,69,1998-05-05T05:06,,1998-05-05T07:03,1998-05-06T02:31,1998-05-07T10:56,1998-05-07T22:49,2,-,2,3,3,3,N,N,X,~W,Mini Wind gap. Has leg? Interacts with prev case
+
 71,-,1998-06-02T08:00,,1998-06-02T10:28,1998-06-02T16:43,-,1998-06-02T19:00,2,-,1,2,-,2,N,N,X,-,Weak sheath. Smooth FR front
+
 72,-,1998-06-13T19:25,,1998-06-14T02:21,1998-06-14T23:21,-,1998-06-15T03:09,0,-,1,2,-,2,N,N,X,-,Back half of FR fairly turbulent
+
 73,75,1998-06-24T10:00,,1998-06-24T13:26,1998-06-25T16:03,-,1998-06-25T23:28,3,-,3,1,-,-,N,N,X,-,Mixed region starts at shock from next (real) case.
+
 74,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,X,-,Don't think this is a thing just part of 74
+
 75,73,1998-06-25T16:03,,1998-06-25T23:28,1998-06-26T07:48,1998-06-26T19:39,-,0,-,2,3,2,-,M?,N,-,-,Enh in leg? Has leg?
+
 76,77,1998-07-05T03:15,,1998-07-06T08:22,1998-07-07T14:06,-,-,3,-,2,1,-,-,N,N,X,-,Not confident in huge messy sheath.
+
 77,76,1998-07-07T14:06,,1998-07-07T15:20,1998-07-09T05:56,-,-,3,-,3,3,-,-,N,N,-,-,Not confident is thing at all. Sheath based on T.
+
 78,-,1998-07-10T23:00,,1998-07-11T15:27,1998-07-12T06:01,1998-07-12T17:20,1998-07-12T22:39,2,-,2,3,3,2,N,N,X,-,Messy but structured within FR. Guessed on splitting
+
 79,-,1998-08-01T08:20,,1998-08-01T15:38,1998-08-02T07:42,1998-08-03T03:12,1998-08-03T10:3,2,-,2,2,2,2,N,N,X,-,Guessing on split
+
 80,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Cannot say is actually a thing? Super weak if real
+
 81,-,1998-08-07T11:00,,1998-08-08T02:19,1998-08-08T21:27,1998-08-09T17:53,-,3,-,2,2,2,-,N,N,X,-,Sheath hard to define. Not sure if mixed between end of leg and next case bc pretty smooth.
+
 82,-,1998-08-10T00:31,,1998-08-10T13:30,1998-08-10T23:30,-,-,2,-,3,3,-,-,N,N,X,-,Turbulent FR. Hard to define back end of sheath.
+
 83,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Cannot say is actually a thing? Super weak if real
+
 84,-,1998-08-19T18:40,,1998-08-20T09:11,1998-08-21T19:18,-,-,1,-,1,2,-,-,N,N,-,-,Could have leg?
+
 85,-,1998-08-26T06:51,,1998-08-27T05:38,1998-08-27T19:59,-,1998-08-28T00:45,1,-,2,3,-,2,Y,N,X,-,Suspicious of sheath length.
+
 86,-,1998-09-23T01:12,,1998-09-23T04:00,1998-09-23T14:39,-,1998-09-23T17:51,3,-,2,3,-,2,N,N?,X,-,Weak case. V slightly evelated after.
+
 87,-,1998-09-24T23:18,,1998-09-25T06:16,1998-09-25T21:12,1998-09-26T09:58,1998-09-26T16:28,1,-,1,2,2,2,N,N?,X,-,V slighlty elevated after.
+
 88,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,GX,-,Is HSS?
+
 89,-,1998-10-18T19:30,,1998-10-19T04:19,1998-10-19T14:51,1998-10-20T07:01,-,1,-,1,2,-,2,N,N,GX,-,Fairly clean case
+
 90,-,1998-10-23T12:57,,1998-10-23T19:55,1998-10-24T19:02,-,-,1,-,1,3,-,-,N,N,X,-,Weak case. Could maybe split up FR.
+
 91,-,1998-11-07T08:15,,1998-11-07T22:21,1998-11-08T04:41,-,1998-11-08T08:08,2,-,1,2,-,2,N,N,X,-,Mixed region starts at shock from next case 
+
 92,93,1998-11-08T04:51,,1998-11-09T03:45,1998-11-10T01:48,-,1998-11-10T05:51,1,-,2,3,-,2,Y,N,-,-,Kink in B could be glancing of leg?
+
 93,92,1998-11-13T02:00,,1998-11-13T04:30,1998-11-14T06:44,-,1998-11-14T10:15,3,-,2,3,-,3,N,N,G,W,Weak case. Hard to define especially with Wind gap
+
 94,-,1998-11-30T05:06,,1998-11-30T10:08,1998-11-30T18:20,-,1998-12-01T04:00,2,-,2,3,-,3,N,N,X,-,Weak and turbulent. Guessing at back. Might be two FR.
+
 95,-,1998-12-28T18:26,,1998-12-29T18:00,1998-12-31T02:00,-,-,3,-,3,3,-,-,N,N,X,AW,No ACE. Wind plasma missing near front of sheath. Not sure is thing
+
 96,-,-,,1999-01-04T04:00,1999-01-04T22:00,-,-,-,-,3,3,-,-,N,N,-,-,Very weak. Mostly going off T drop
+
 97,-,1999-01-13T10:54,,1999-01-13T16:05,1999-01-13T23:00,-,-,2,-,2,2,-,-,N,N,GX,W,Might have mixed region. Wind plasma has issues/gaps. Glancing encounter?
+
 98,-,1999-01-22T20:24,,1999-01-23T09:35,1999-01-23T17:08,-,1999-01-23T14:38,1,-,2,3,-,3,N,N,X,-,Clear sheath but weak turbulent FR.
+
 99,-,-,,1999-02-11T17:41,1999-02-12T03:35,-,-,-,-,2,2,-,-,N,N,GX,-,Weak case. Hard to be certain
+
 100,-,-,,1999-02-13T19:00,1999-02-14T16:22,-,-,-,-,3,3,-,-,N,N,GX,-,Weak case.  Making guess based on T
 101,102,-,,1999-02-16T15:40,1999-02-17T07:09,-,-,-,-,3,2,-,-,N,N,X,-,Weak case.  Making guess based on T. Interacts with next case.
 102,101; 103,1999-02-17T07:09,,1999-02-17T12:23,1999-02-18T02:46,-,-,2,-,3,3,-,-,N,N,X,-,Weak case. Glancing blow. Interacts with prev and next. Might not be CME?
