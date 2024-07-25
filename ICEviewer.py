@@ -7,16 +7,36 @@ import matplotlib.dates as mdates
 
 obsDataPath = './ISdata/'
 
+shadeICE = True
 plotCats = True
 plotHSS = True
 addLabels = True
 
+# ICE region colors
+cols = ['r', 'orange', 'b', 'b', 'orange']     
+
+# boundary catalog colors
+catCols = {'ATSB':'Cyan', 'CDAW':'#FCB105', 'DONKI':'Maroon', 'DREAMS':'Magenta', 'GMU1':'#ffad33', 'GMU2':'Gold', 'H4C':'#6915CE', 'Lepping':'#F39C12', 'RC':'Blue', 'Wind':'Red'}
+
+# HSS catalog styles [plot offset, color]
+catStyles = {'G':[-0.1, 'r'] , 'V':[0.,'b'], 'X':[0.,'orange'], 'D':[.1,'maroon']}
+
+# Observation aesthetics
+obsLW = 1.5 # linewidth 
+ACEcol = 'k'
+Windcol = 'gray'
+
+
+
+# The other CME catalogs
 otherData = np.genfromtxt('revICEless.dat', dtype=str)
+# LLAMAICE results which are separate bc more bounds
 ICEdata   = np.genfromtxt('LLAMAICE0.2.csv', delimiter=',', dtype=str)
 
 
 CMEchoice = sys.argv[1]
 ICEcase = True
+failCase = False
 
 totalCMEs = otherData[-1,0]
 
@@ -53,6 +73,10 @@ else:
         dateStr = ICEdata[myID,2] # sheath time
         if dateStr == '-':
             dateStr = ICEdata[myID,4] # FR time
+        if dateStr == '-': # fail/supsect case
+            failCase = True
+            print('No LLAMAICE bounds only other catalog(s).')
+            dateStr = otherData[myoIDs[0],1]
         myYr = dateStr[0:4]
         print ('Results for CME '+dateStr)
         myDT   = datetime.datetime.strptime(dateStr, "%Y-%m-%dT%H:%M" )
@@ -203,11 +227,8 @@ fig, ax0 = plt.subplots(11, 1, sharex=True, figsize=(10,7.5), gridspec_kw = {'he
 axes = [ax0[1], ax0[2], ax0[3],ax0[4],ax0[5],ax0[6],ax0[7],ax0[8],ax0[9],ax0[10],ax0[0]]
 cid = fig.canvas.mpl_connect('button_press_event', mouse_event)
 
-ACEcol = 'k'
-Windcol = 'gray'
 
 # Plot ACE if exists
-obsLW = 1.5
 if hasACE:
     axes[0].plot(aceTimes[BidxA], BtotACE[BidxA], ACEcol, lw=obsLW)
     axes[1].plot(aceTimes[BidxA], BxACE[BidxA], ACEcol, lw=obsLW)
@@ -422,7 +443,6 @@ if ICEcase:
         axes[i].set_ylim(bounds[i])
 
 # ============================== Plot the boundaries for this event ============================== 
-catCols = {'ATSB':'Cyan', 'CDAW':'#FCB105', 'DONKI':'Maroon', 'DREAMS':'Magenta', 'GMU1':'#ffad33', 'GMU2':'Gold', 'H4C':'#6915CE', 'Lepping':'#DA5D06', 'RC':'Blue', 'Wind':'Red'}
 if plotCats:
     # get boundaries
     bounds = []
@@ -450,38 +470,38 @@ if plotCats:
 
 
 # ==============================  Shade in LLAMAICE regions ==============================  
-cols = ['r', 'orange', 'b', 'b', 'orange']     
 if ICEbounds:
     alp = 0.2
-    for i in range(10):
-        if (ICEbounds[1] != '-') & (ICEbounds[3] != '-'):
-            if ICEbounds[2] in ['-', '']:
-                ib1 = datetime.datetime.strptime(ICEbounds[1], "%Y-%m-%dT%H:%M" )
-                ib2 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
-            else:
-                ib1 = datetime.datetime.strptime(ICEbounds[1], "%Y-%m-%dT%H:%M" )
-                ib2 = datetime.datetime.strptime(ICEbounds[2], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
-                ib1 = datetime.datetime.strptime(ICEbounds[2], "%Y-%m-%dT%H:%M" )
-                ib2 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )            
-        if (ICEbounds[3] != '-') & (ICEbounds[4] != '-'):
-            ib1 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
-            ib2 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
-            axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp )
-        if (ICEbounds[4] != '-') & (ICEbounds[5] != '-'):
-            ib1 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
-            ib2 = datetime.datetime.strptime(ICEbounds[5], "%Y-%m-%dT%H:%M" )
-            axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp/2 )
-        if (ICEbounds[5] != '-') & (ICEbounds[6] != '-'):
-            ib1 = datetime.datetime.strptime(ICEbounds[5], "%Y-%m-%dT%H:%M" )
-            ib2 = datetime.datetime.strptime(ICEbounds[6], "%Y-%m-%dT%H:%M" )
-            axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp )
-        if (ICEbounds[5] == '-') & (ICEbounds[4] != '-') & (ICEbounds[6] != '-'):
-            ib1 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
-            ib2 = datetime.datetime.strptime(ICEbounds[6], "%Y-%m-%dT%H:%M" )
-            axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
+    if shadeICE:
+        for i in range(10):
+            if (ICEbounds[1] != '-') & (ICEbounds[3] != '-'):
+                if ICEbounds[2] in ['-', '']:
+                    ib1 = datetime.datetime.strptime(ICEbounds[1], "%Y-%m-%dT%H:%M" )
+                    ib2 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
+                else:
+                    ib1 = datetime.datetime.strptime(ICEbounds[1], "%Y-%m-%dT%H:%M" )
+                    ib2 = datetime.datetime.strptime(ICEbounds[2], "%Y-%m-%dT%H:%M" )
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
+                    ib1 = datetime.datetime.strptime(ICEbounds[2], "%Y-%m-%dT%H:%M" )
+                    ib2 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )            
+            if (ICEbounds[3] != '-') & (ICEbounds[4] != '-'):
+                ib1 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
+                ib2 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
+                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp )
+            if (ICEbounds[4] != '-') & (ICEbounds[5] != '-'):
+                ib1 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
+                ib2 = datetime.datetime.strptime(ICEbounds[5], "%Y-%m-%dT%H:%M" )
+                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp/2 )
+            if (ICEbounds[5] != '-') & (ICEbounds[6] != '-'):
+                ib1 = datetime.datetime.strptime(ICEbounds[5], "%Y-%m-%dT%H:%M" )
+                ib2 = datetime.datetime.strptime(ICEbounds[6], "%Y-%m-%dT%H:%M" )
+                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp )
+            if (ICEbounds[5] == '-') & (ICEbounds[4] != '-') & (ICEbounds[6] != '-'):
+                ib1 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
+                ib2 = datetime.datetime.strptime(ICEbounds[6], "%Y-%m-%dT%H:%M" )
+                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
     print (ICEbounds[0].rjust(11)  + ICEbounds[1].rjust(23) + ICEbounds[2].rjust(23) + ICEbounds[3].rjust(23)+ ICEbounds[4].rjust(23)+ ICEbounds[5].rjust(23)+ ICEbounds[6].rjust(23))
 print('')            
 
@@ -490,7 +510,7 @@ print('')
 if ICEcase:
     alp =  0.07
     # shade in prev case
-    if myID !=0:
+    if (myID !=0) & shadeICE:
         prevICE = 'LLAMAICE', ICEdata[myID-1, 2], ICEdata[myID-1, 3], ICEdata[myID-1, 4], ICEdata[myID-1, 5], ICEdata[myID-1, 6], ICEdata[myID-1, 7]
         for i in range(10):
             if (prevICE[1] != '-') & (prevICE[3] != '-'):
@@ -530,7 +550,7 @@ if ICEcase:
                     
         
     # shade in next case
-    if myID != int(totalCMEs)-1:
+    if (myID != int(totalCMEs)-1) & shadeICE:
         prevICE = 'LLAMAICE', ICEdata[myID+1, 2], ICEdata[myID+1, 3], ICEdata[myID+1, 4], ICEdata[myID+1, 5], ICEdata[myID+1, 6], ICEdata[myID+1, 7]
         for i in range(10):
             if (prevICE[1] != '-') & (prevICE[3] != '-'):
@@ -571,9 +591,7 @@ if ICEcase:
       
     
 # ============================== Add in HSS flags ============================== 
-if plotHSS:
-    catStyles = {'G':[-0.1, 'r'] , 'V':[0.,'b'], 'X':[0.,'orange'], 'D':[.1,'maroon']}
-    
+if plotHSS:    
     HSSdata = np.genfromtxt('HSSsort.dat', dtype=str)
     plotlims = axes[0].get_xlim()
     pltst = mdates.num2date(plotlims[0])
@@ -581,11 +599,11 @@ if plotHSS:
 
     yrst = pltst.year
     yrLen = (datetime.datetime(yrst+1,1,1,0,0,0) - datetime.datetime(yrst,1,1,0,0,0)).total_seconds()
-    roughstart = yrst + (datetime.datetime(yrst, pltst.month, pltst.day,0,0,0) - datetime.datetime(yrst-1,12,31,0,0,0)).total_seconds() / yrLen - 0.005
+    roughstart = yrst + (datetime.datetime(yrst, pltst.month, pltst.day,0,0,0) - datetime.datetime(yrst-1,12,31,0,0,0)).total_seconds() / yrLen - 0.01
 
     yren = plten.year
     yrLen = (datetime.datetime(yren+1,1,1,0,0,0) - datetime.datetime(yren,1,1,0,0,0)).total_seconds()
-    roughend = yren + (datetime.datetime(yren, plten.month, plten.day,0,0,0) - datetime.datetime(yren-1,12,31,0,0,0)).total_seconds() / yrLen + 0.005
+    roughend = yren + (datetime.datetime(yren, plten.month, plten.day,0,0,0) - datetime.datetime(yren-1,12,31,0,0,0)).total_seconds() / yrLen + 0.01
 
     HSSidxA = np.where((HSSdata[:,1].astype(float) > roughstart) & (HSSdata[:,1].astype(float) < roughend))
     HSSidxB = np.where((HSSdata[:,0].astype(float) > roughstart) & (HSSdata[:,0].astype(float) < roughend))
@@ -626,7 +644,7 @@ if addLabels:
     axes[0].text(0.858, nowy, 'ICE Regions', horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color='k', weight='bold')
     axes[0].annotate('', xy=(0.856, nowy-0.007), xycoords='figure fraction', xytext=(0.9525, nowy-0.007), arrowprops=dict(arrowstyle="-", color='k', lw=1.25))
     nowy -= 0.02
-    if ICEcase:
+    if ICEcase and shadeICE:
         # Sheath
         if ICEbounds[1] != '-':
             axes[0].text(0.87, nowy, 'Sheath', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=cols[0], alpha=0.5, weight='bold') 
@@ -665,7 +683,7 @@ if addLabels:
             
     # add in HSS stuff
     if plotHSS and myHSScats:
-        axes[0].text(0.858, 0.96, 'HSS Regions ', horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color='k', weight='bold')
+        axes[0].text(0.858, 0.97, 'HSS Regions ', horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color='k', weight='bold')
         nowy = 0.91
         fullnames = {'D':'DONKI', 'V':'VARSITI', 'X':'Xystouris', 'G':'Grandin'}
         axes[0].text(0.858, nowy, 'HSS Catalogs', horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color='k', weight='bold')
@@ -679,9 +697,9 @@ if addLabels:
     # Add in obs labels
     axes[0].text(0.858, 0.18, 'Observations', horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color='k', weight='bold')
     axes[0].annotate('', xy=(0.856, 0.173), xycoords='figure fraction', xytext=(0.964, 0.173), arrowprops=dict(arrowstyle="-", color='k', lw=1.25)) 
-    axes[0].text(0.87, 0.157,  'Wind' , horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color='gray', weight='bold')       
+    axes[0].text(0.87, 0.157,  'Wind' , horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color=Windcol, weight='bold')       
     if hasACE:
-        axes[0].text(0.87, 0.137,  'ACE' , horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color='black', weight='bold')   
+        axes[0].text(0.87, 0.137,  'ACE' , horizontalalignment='left', verticalalignment='center', transform = fig.transFigure, color=ACEcol, weight='bold')   
             
 
 axes[0].set_ylabel('B [nT]')
@@ -701,7 +719,7 @@ if addLabels:
     plt.subplots_adjust(hspace=0.1,left=0.1,right=0.85,top=0.99,bottom=0.1)
 else:
     plt.subplots_adjust(hspace=0.1,left=0.1,right=0.99,top=0.99,bottom=0.1)
-axes[9].text(0.06, 0.05, myYr, transform = fig.transFigure)
+axes[9].text(0.035, 0.07, myYr, transform = fig.transFigure)
 # add my comments (For now)
 if ICEcase:
     axes[9].text(0.05, 0.01, ICEdata[myID][-1], transform = fig.transFigure)    
