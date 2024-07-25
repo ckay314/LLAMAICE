@@ -350,13 +350,18 @@ if ICEcase:
     for i in range(10):
         allMins[i] = np.min([aceMins[i], windMins[i]])
         allMaxs[i] = np.max([aceMaxs[i], windMaxs[i]])
-        if (allMaxs[i] > 10 * np.min([aceMaxs[i], windMaxs[i]])) & (np.min([aceMaxs[i], windMaxs[i]]) >0):
+        if (allMaxs[i] > 10 * np.min([aceMaxs[i], windMaxs[i]])) & (np.min([aceMaxs[i], windMaxs[i]]) >0) & hasACE:
             # try checking the 99th percentile of the other sat to see if rm bad data
-            nearMax = [np.percentile(allWind[i],99),np.percentile(allWind[i],99)]
+            nearMax = [np.percentile(allWind[i][windIdx],99),np.percentile(allACE[i][aceIdx],99)]
             if np.max(nearMax) < 2*np.min(nearMax):
                 allMaxs[i] = np.max(nearMax) 
             else:
                 allMaxs[i] = np.min([aceMaxs[i], windMaxs[i]])
+        elif (aceMaxs[i] == windMaxs[i]) & (allMaxs[i] > defMaxs[i]):
+            # assume we only have Wind and it is a little wonky
+            my99 = np.percentile(allWind[i][windIdx], 99)
+            if my99 < defMaxs[i]:
+                allMaxs[i] = my99
         if allMaxs[i] > bounds[i][1]:
             allMaxs[i] = bounds[i][1]
         if (allMins[i] < 0) & (allMins[i] < 5 * np.max([aceMins[i], windMins[i]])):
@@ -517,36 +522,44 @@ if ICEcase:
                 if prevICE[2] in ['-', '']:
                     ib1 = datetime.datetime.strptime(prevICE[1], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
+                    if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
                 else:
                     ib1 = datetime.datetime.strptime(prevICE[1], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
+                    if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
                     ib1 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )         
+                    if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )         
             if (prevICE[3] != '-') & (prevICE[4] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[4], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp )
+                if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp )
             if (prevICE[4] != '-') & (prevICE[5] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[4], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[5], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[3], zorder=0, alpha=alp/2 )
+                if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[3], zorder=0, alpha=alp/2 )
             if (prevICE[5] != '-') & (prevICE[6] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[5], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[6], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
+                if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
             if (prevICE[5] == '-') & (prevICE[4] != '-') & (prevICE[6] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[4], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[6], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
+                if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
             # check if sheath overlapping with prev case and shade that region darker
             if (prevICE[-1] != '-') & (ICEbounds[1] != '-'):
                 if prevICE[-1] > ICEbounds[1]:
                     ib2 = datetime.datetime.strptime(prevICE[-1], "%Y-%m-%dT%H:%M" )
                     ib1 = datetime.datetime.strptime(ICEbounds[1], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=0.1)
+                    if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=0.1)
                     
         
     # shade in next case
@@ -557,53 +570,57 @@ if ICEcase:
                 if prevICE[2] in ['-', '']:
                     ib1 = datetime.datetime.strptime(prevICE[1], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
+                    if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
                 else:
                     ib1 = datetime.datetime.strptime(prevICE[1], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
                     axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
                     ib1 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )         
+                    if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )         
             if (prevICE[3] != '-') & (prevICE[4] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[4], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp )
+                if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp )
             if (prevICE[4] != '-') & (prevICE[5] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[4], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[5], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[3], zorder=0, alpha=alp/2 )
+                if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[3], zorder=0, alpha=alp/2 )
             if (prevICE[5] != '-') & (prevICE[6] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[5], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[6], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
+                if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
             if (prevICE[5] == '-') & (prevICE[4] != '-') & (prevICE[6] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[4], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[6], "%Y-%m-%dT%H:%M" )
-                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
+                if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
             # check if next sheath overlapping with this case and shade that region darker
             if (ICEbounds[-1] != '-') & (prevICE[1] != '-'):
                 if ICEbounds[-1] > prevICE[1]:
                     ib2 = datetime.datetime.strptime(ICEbounds[-1], "%Y-%m-%dT%H:%M" )
                     ib1 = datetime.datetime.strptime(prevICE[1], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=0.1)
+                    if (ib1 < endPlotDT) & (ib2 > startPlotDT):
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=0.1)
 
       
     
 # ============================== Add in HSS flags ============================== 
 if plotHSS:    
     HSSdata = np.genfromtxt('HSSsort.dat', dtype=str)
-    plotlims = axes[0].get_xlim()
-    pltst = mdates.num2date(plotlims[0])
-    plten = mdates.num2date(plotlims[1])
-
-    yrst = pltst.year
+    
+    yrst = pstart.year
     yrLen = (datetime.datetime(yrst+1,1,1,0,0,0) - datetime.datetime(yrst,1,1,0,0,0)).total_seconds()
-    roughstart = yrst + (datetime.datetime(yrst, pltst.month, pltst.day,0,0,0) - datetime.datetime(yrst-1,12,31,0,0,0)).total_seconds() / yrLen - 0.01
+    roughstart = yrst + (pstart - datetime.datetime(yrst-1,12,31,0,0,0)).total_seconds() / yrLen
 
-    yren = plten.year
+    yren = pend.year
     yrLen = (datetime.datetime(yren+1,1,1,0,0,0) - datetime.datetime(yren,1,1,0,0,0)).total_seconds()
-    roughend = yren + (datetime.datetime(yren, plten.month, plten.day,0,0,0) - datetime.datetime(yren-1,12,31,0,0,0)).total_seconds() / yrLen + 0.01
+    roughend = yren + (pend - datetime.datetime(yren-1,12,31,0,0,0)).total_seconds() / yrLen
 
     HSSidxA = np.where((HSSdata[:,1].astype(float) > roughstart) & (HSSdata[:,1].astype(float) < roughend))
     HSSidxB = np.where((HSSdata[:,0].astype(float) > roughstart) & (HSSdata[:,0].astype(float) < roughend))
@@ -637,7 +654,11 @@ if addLabels:
         axes[0].text(0.87, nowy, printNames[i], horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=catCols[printNames[i]], weight='bold')
         nowy -= 0.02
     if ICEdata[myID][1] != '-':
-        axes[0].text(0.87, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
+        axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
+    prevPBend = datetime.datetime.strptime(plotbounds[bidx[0]-1][3], "%Y-%m-%dT%H:%M" )
+    nextPBstr = datetime.datetime.strptime(plotbounds[bidx[0]+1][2], "%Y-%m-%dT%H:%M" )
+    if (prevPBend > pstart) or (nextPBstr < pend):
+        axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
 
     # ICE regions
     nowy = 0.7
