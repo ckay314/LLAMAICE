@@ -490,7 +490,11 @@ if ICEbounds:
                     axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[0], zorder=0, alpha=alp )
                     ib1 = datetime.datetime.strptime(ICEbounds[2], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )            
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )
+            elif (ICEbounds[1] == '-') & (ICEbounds[2] not in ['-','']):   
+                ib1 = datetime.datetime.strptime(ICEbounds[2], "%Y-%m-%dT%H:%M" )
+                ib2 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
+                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )         
             if (ICEbounds[3] != '-') & (ICEbounds[4] != '-'):
                 ib1 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
@@ -517,6 +521,8 @@ if ICEcase:
     # shade in prev case
     if (myID !=0) & shadeICE:
         prevICE = 'LLAMAICE', ICEdata[myID-1, 2], ICEdata[myID-1, 3], ICEdata[myID-1, 4], ICEdata[myID-1, 5], ICEdata[myID-1, 6], ICEdata[myID-1, 7]
+        if  ICEdata[myID-1, 4] == '-':
+            prevICE = 'LLAMAICE', ICEdata[myID-2, 2], ICEdata[myID-2, 3], ICEdata[myID-2, 4], ICEdata[myID-2, 5], ICEdata[myID-2, 6], ICEdata[myID-2, 7]
         for i in range(10):
             if (prevICE[1] != '-') & (prevICE[3] != '-'):
                 if prevICE[2] in ['-', '']:
@@ -532,7 +538,11 @@ if ICEcase:
                     ib1 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
                     if (ib1 < endPlotDT) & (ib2 > startPlotDT):
-                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )         
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )    
+            elif (prevICE[1] == '-') & (prevICE[2] not in ['-','']):   
+                ib1 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
+                ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
+                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )
             if (prevICE[3] != '-') & (prevICE[4] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[4], "%Y-%m-%dT%H:%M" )
@@ -565,6 +575,8 @@ if ICEcase:
     # shade in next case
     if (myID != int(totalCMEs)-1) & shadeICE:
         prevICE = 'LLAMAICE', ICEdata[myID+1, 2], ICEdata[myID+1, 3], ICEdata[myID+1, 4], ICEdata[myID+1, 5], ICEdata[myID+1, 6], ICEdata[myID+1, 7]
+        if  ICEdata[myID+1, 4] == '-':
+            prevICE = 'LLAMAICE', ICEdata[myID+2, 2], ICEdata[myID+2, 3], ICEdata[myID+2, 4], ICEdata[myID+2, 5], ICEdata[myID+2, 6], ICEdata[myID+2, 7]
         for i in range(10):
             if (prevICE[1] != '-') & (prevICE[3] != '-'):
                 if prevICE[2] in ['-', '']:
@@ -579,7 +591,12 @@ if ICEcase:
                     ib1 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
                     if (ib1 < endPlotDT) & (ib2 > startPlotDT):
-                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )         
+                        axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )    
+            elif (prevICE[1] == '-') & (prevICE[2] not in ['-','']):
+                print (prevICE)   
+                ib1 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
+                ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
+                axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )
             if (prevICE[3] != '-') & (prevICE[4] != '-'):
                 ib1 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[4], "%Y-%m-%dT%H:%M" )
