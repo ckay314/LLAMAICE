@@ -352,10 +352,13 @@ if ICEcase:
         allMaxs[i] = np.max([aceMaxs[i], windMaxs[i]])
         if (allMaxs[i] > 10 * np.min([aceMaxs[i], windMaxs[i]])) & (np.min([aceMaxs[i], windMaxs[i]]) >0) & hasACE:
             # try checking the 99th percentile of the other sat to see if rm bad data
-            nearMax = [np.percentile(allWind[i][windIdx],99),np.percentile(allACE[i][aceIdx],99)]
-            if np.max(nearMax) < 2*np.min(nearMax):
-                allMaxs[i] = np.max(nearMax) 
-            else:
+            try:
+                nearMax = [np.percentile(allWind[i][windIdx],99),np.percentile(allACE[i][aceIdx],99)]
+                if np.max(nearMax) < 2*np.min(nearMax):
+                    allMaxs[i] = np.max(nearMax) 
+                else:
+                    allMaxs[i] = np.min([aceMaxs[i], windMaxs[i]])
+            except:
                 allMaxs[i] = np.min([aceMaxs[i], windMaxs[i]])
         elif (aceMaxs[i] == windMaxs[i]) & (allMaxs[i] > defMaxs[i]):
             # assume we only have Wind and it is a little wonky
