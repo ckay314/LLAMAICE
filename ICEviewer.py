@@ -16,7 +16,7 @@ addLabels = True
 cols = ['r', 'orange', 'b', 'b', 'orange']     
 
 # boundary catalog colors
-catCols = {'ATSB':'Cyan', 'CDAW':'#FCB105', 'DONKI':'Maroon', 'DREAMS':'Magenta', 'GMU1':'#ffad33', 'GMU2':'Gold', 'H4C':'#6915CE', 'Lepping':'#F39C12', 'RC':'Blue', 'Wind':'Red'}
+catCols = {'ATSB':'Cyan', 'CDAW':'#FCB105', 'DONKI':'Maroon', 'DREAMS':'Magenta', 'GMU1':'#F0E68C', 'GMU2':'Gold', 'H4C':'#6915CE', 'Lepping':'#F39C12', 'RC':'Blue', 'Wind':'Red'}
 
 # HSS catalog styles [plot offset, color]
 catStyles = {'G':[-0.1, 'r'] , 'V':[0.,'b'], 'X':[0.,'orange'], 'D':[.1,'maroon']}

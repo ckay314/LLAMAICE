@@ -310,176 +310,91 @@
 314,313; 315,2003-05-29T18:25,2003-05-30T00:37,2003-05-30T03:16,2003-05-30T12:48,-,2003-05-30T16:00,1,-,2,2,-,2,N,N,X,-,Sheath/FR bound uncear
 315,314,2003-05-30T15:53,,2003-05-30T22:26,2003-05-31T20:02,-,-,1,-,2,2,-,-,M?,N,X,-,Think is thing? Low enough T to not be HSS?
 316,317,2003-06-15T14:08,,2003-06-15T20:00,2003-06-16T18:00,-,-,2,-,2,2,-,-,M?,N,X,-,So much ugly structure but is low T. Didn't attempt splitting. Interacts with next
-
 317,316,2003-06-16T22:33,2003-06-17T12:04,2003-06-17T19:03,2003-06-18T09:05,-,-,2,-,2,2,-,-,N,Y,X,-,HSS behind?
-
 318,-,-,,2003-07-10T19:53,2003-07-11T08:53,-,-,-,-,3,3,-,-,N,N,-,-,Is maybe glancing. Not convinced
-
-319,-,-,,2003-07-23T14:33,2003-07-24T00:23,2003-07-24T12:36,2003-07-24T16:00,,-,2,3,2,2,M?,N,X,-,Guessing at leg split. Before or after n enhancement?
-
-320,-,2003-08-04T20:23,,2003-08-05T00:46,2003-08-05T08:22,2003-08-05T21:39,2003-08-06T01:44,2,-,2,2,2,1,N,M?,GX,-,Could be HSS behind but a little far away
-
+319,-,2003-07-23T04:06,,2003-07-23T14:33,2003-07-24T00:23,2003-07-24T12:36,2003-07-24T16:00,,-,2,3,2,2,M?,N,X,-,Guessing at leg split. Before or after n enhancement?
+320,-,2003-08-04T20:23,2003-08-04T22:20,2003-08-05T00:46,2003-08-05T08:22,2003-08-05T21:39,2003-08-06T01:44,2,-,2,2,2,1,N,M?,GX,-,Could be HSS behind but a little far away
 321,322,2003-08-15T12:00,,2003-08-16T02:00,2003-08-17T13:40,-,-,2,-,1,1,-,-,N,M?,X,W,SW v a little elevated before. FR bounds mostly from T
-
-322,321,2003-08-17T13:40,,2003-08-18T00:25,2003-08-19T04:35,-,2003-08-19T15:00,1,-,2,2,-,3,N,N,X,W,ACE B pretty smooth. Switched to lower res?
-
+322,321,2003-08-17T13:40,2003-08-18T00:25,2003-08-18T06:07,2003-08-19T04:35,-,2003-08-19T15:00,1,-,2,2,-,3,N,N,X,W,ACE B pretty smooth. Switched to lower res?
 323,324,2003-10-21T22:00,,2003-10-22T02:24,2003-10-24T02:24,-,2003-10-24T15:00,2,-,2,1,-,2,Y,N,X,W,Long flank hit. T too low to be HSS? Mixed until next case
-
 324,323,2003-10-24T15:24,,2003-10-24T21:00,2003-10-25T01:19,-,-,1,-,2,2,-,-,N,Y?,X,W,Missing Wind plasma. Smooth FR then HSS? Could be leg? Not interacting with next if HSS
-
 325,-,2003-10-25T11:00,,2003-10-25T14:00,2003-10-26T02:52,-,-,2,-,2,3,-,-,N,Y?,-,W,HSS before? Going on smooth B and T drop for bounds but uncertain. No Wind plasma
-
-326,327,2003-10-26T19:08,,2003-10-26T22:00,2003-10-28T02:06,-,-,2,-,3,2,-,-,N,N,X,W,Weak case. Extends to next?
-
+326,327,2003-10-26T19:08,,2003-10-26T22:00,2003-10-27T09:39,-,-,2,-,3,2,-,-,N,N,X,W,Weak case. Extends to next?
 327,326,-,,2003-10-28T02:30,2003-10-28T09:00,-,-,,-,2,2,-,-,N,N,X,AW,No Wind plasma. ACE is lo res. Might be longer but bad data so hard to tell.
-
-328,-,2003-10-29T06:11,,2003-10-29T11:00,2003-10-30T03:00,-,-,1,-,2,2,-,-,N,N,-,AW,No plasma data. Hard to split without plasma
-
-329,-,2003-10-30T16:19,,2003-10-31T02:00,2003-10-31T13:00,2003-11-02T00:00,-,2,-,1,2,3,-,N,N?,-,AW,Think has long leg but could be HSS tail. Missing plasma data makes hard
-
+328,-,2003-10-29T06:11,2003-10-29T08:34,2003-10-29T11:00,2003-10-30T03:00,-,-,1,-,2,2,-,-,N,N,-,AW,No plasma data. Hard to split without plasma
+329,-,2003-10-30T16:19,2003-10-30T21:44,2003-10-31T02:00,2003-10-31T13:00,2003-11-02T00:00,-,2,-,1,2,3,-,N,N?,-,AW,Think has long leg but could be HSS tail. Missing plasma data makes hard
 330,-,2003-11-20T08:35,,2003-11-20T12:00,2003-11-21T01:40,-,2003-11-21T08:00,1,-,2,2,-,3,Y?,N,X,W,Fairly smooth B in FR. Could have leg
-
 331,-,2004-01-09T15:00,,2004-01-10T06:00,2004-01-10T20:49,-,2004-01-11T05:00,1,-,1,2,-,1,N,M?,X,W,SW v a bit elevated behind. Wind plasma gap. ACE n get suspicious low.
-
-332,333,2004-01-22T02:10,,2004-01-22T11:18,2004-01-23T06:08,-,2004-01-23T14:25,1,-,2,2,-,2,M?,N,X,W,Wind plasma gap. Attempted to match shift ACE T drop to Wind based on B features. Slight enh in Ace
-
-333,332,2004-01-23T14:25,,2004-01-23T23:00,2004-01-25T04:00,-,-,1,-,1,2,-,-,N,N,-,W,ACE timing bc of gaps. Too turbulent to attempt splitting
-
+332,333,2004-01-22T02:10,2004-01-22T08:00,2004-01-22T11:18,2004-01-23T06:08,-,2004-01-23T14:25,1,-,2,2,-,2,M?,N,X,W,Wind plasma gap. Attempted to match shift ACE T drop to Wind based on B features. Slight enh in Ace
+333,332,2004-01-23T14:25,2004-01-23T23:00,2004-01-24T08:54,2004-01-25T04:00,-,-,1,-,1,2,-,-,N,N,-,W,ACE timing bc of gaps. Too turbulent to attempt splitting
 334,-,-,,2004-02-17T18:00,2004-02-18T16:00,-,-,-,-,1,2,-,-,N,M?,X,W,ACE timing. Glancing blow/leg hit. SW v a little elevated behind but do see n compression in rear
-
-335,-,2004-04-03T09:55,,2004-04-04T02:47,2004-04-05T07:59,-,2004-04-05T19:11,1,-,1,3,-,2,Y,Y,X,-,SW v rises behind
-
+335,-,2004-04-03T09:55,2004-04-03T15:37,2004-04-04T02:47,2004-04-05T07:59,-,2004-04-05T19:11,1,-,1,3,-,2,Y,Y,X,-,SW v rises behind
 336,-,2004-04-26T16:12,,2004-04-27T04:48,2004-04-27T20:15,-,-,2,-,2,3,-,-,N,N,GX,W,Too messy for enhancement.
-
 337,-,2004-04-30T13:00,,2004-05-01T01:17,2004-05-01T12:00,-,-,2,-,2,1,-,-,N,N,X,W,Small but pretty straightforward
-
-338,-,2004-05-01T12:00,,2004-05-01T15:00,2004-05-02T21:00,-,-,1,-,1,2,-,-,Y,N,-,W,ACE timing. Enhancement? Or could be two FR based on rot.
-
+338,-,2004-05-01T12:00,,2004-05-01T15:00,2004-05-02T08:38,2004-05-02T21:00,2004-05-03T02:18,1,-,1,2,-,-,Y,N,-,W,ACE timing. Enhancement? Or could be two FR based on rot.
 339,-,-,,2004-06-25T11:37,2004-06-26T03:05,-,2004-06-26T07:58,-,-,1,2,-,3,N,N,-,-,Glancing/flank hit
-
-340,341,2004-07-22T09:45,,2004-07-22T13:26,2004-07-24T05:45,-,-,1,-,2,1,-,-,N,M?,X,-,There is a lot of structure in FR. Might be sheath-FR-HSS-FR-case 341
-
-341,340; 342,2004-07-24T05:32,,2004-07-24T12:48,2004-07-25T06:26,2004-07-25T12:10,2004-07-25T15:00,1,-,2,2,1,2,M?,N,X,-,Interacts with before and after
-
+340,341,2004-07-22T09:45,2004-07-22T13:26,2004-07-22T20:04,2004-07-23T17:30,2004-07-24T05:45,-,1,-,2,1,-,-,N,M?,X,-,There is a lot of structure in FR. Might be sheath-FR-HSS-FR-case 341
+341,340; 342,2004-07-24T05:32,2004-07-24T11:55,2004-07-24T17:20,2004-07-25T06:26,2004-07-25T12:10,2004-07-25T15:00,1,-,2,2,1,2,M?,N,X,-,Interacts with before and after
 342,341; 343,2004-07-25T15:00,,2004-07-25T17:45,2004-07-26T06:52,2004-07-26T17:51,2004-07-26T22:25,2,-,2,2,3,2,N,N,X,-,Guessing at split and that goes until next
-
 343,342,2004-07-26T22:25,,2004-07-27T03:11,2004-07-27T15:24,-,2004-07-28T02:05,0,-,1,1,-,3,N,N?,-,-,SW v is slightly elevated behind.
-
 344,-,2004-08-01T01:44,,2004-08-01T15:50,2004-08-02T04:00,-,2004-08-02T08:38,1,-,2,2,-,3,N,N,-,-,Little B rot
-
 345,-,-,,2004-08-03T12:25,2004-08-03T20:58,-,-,-,-,3,3,-,-,N,N,-,-,Not convinced is a thing. Interesting diff in T between ACE and Wind
-
 346,-,2004-08-29T09:09,,2004-08-29T18:45,2004-08-30T05:23,2004-08-30T17:46,2004-08-30T21:45,1,-,1,2,2,1,Y?,N,GX,-,Might not be worth splitting off leg. All prettty smooth with minimal rot
-
-347,-,2004-09-13T19:42,,2004-09-14T17:59,2004-09-15T14:23,-,-,0,-,1,3,-,-,N,Y?,X,-,SW v is slightly elevated behind and smooth for long time
-
-348,-,2004-09-17T21:00,,2004-09-18T12:06,2004-09-19T06:09,2004-09-19T16:58,-,2,-,1,2,3,-,N,N,X,-,Could add mixed? Kinda looks like small FR in front of sheath
-
-349,350,2004-11-07T18:00,,2004-11-08T04:30,2004-11-08T16:53,2004-11-09T09:20,2004-11-09T18:25,1,-,1,2,1,2,N,N,X,-,Interacts with next CME. Small FR in sheath?
-
+347,-,2004-09-13T19:42,2004-09-14T15:00,2004-09-14T21:26,2004-09-15T14:23,-,-,0,-,1,3,-,-,N,Y?,X,-,SW v is slightly elevated behind and smooth for long time
+348,-,2004-09-17T21:00,2004-09-18T03:27,2004-09-18T12:06,2004-09-19T06:09,2004-09-19T16:58,-,2,-,1,2,3,-,N,N,X,-,Could add mixed? Kinda looks like small FR in front of sheath
+349,350,2004-11-07T18:00,2004-11-07T22:46,2004-11-08T04:30,2004-11-08T16:53,2004-11-09T09:20,2004-11-09T18:25,1,-,1,2,1,2,N,N,X,-,Interacts with next CME. Small FR in sheath?
 350,349; 352,2004-11-09T18:25,,2004-11-09T20:38,2004-11-10T16:47,2004-11-11T16:47,2004-11-11T22:20,2,-,1,3,3,2,N,N,X,-,Think Lepping 351 is just part of this. Mixed region from shock from 352?
-
-351,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,X,-,Part of 350
-
-352,350,2004-11-11T16:47,,2004-11-12T08:35,2004-11-12T18:19,2004-11-10T16:47,2004-11-13T21:30,1,-,1,2,3,3,N,N,X,-,Guesing at splitting
-
+352,350,2004-11-11T16:47,,2004-11-12T08:35,2004-11-12T18:19,2004-11-13T09:35,2004-11-13T21:30,1,-,1,2,3,3,N,N,X,-,Guesing at splitting
 353,-,-,,2004-12-10T05:21,2004-12-10T21:35,-,-,-,-,1,2,-,-,N,N,X,-,Slow and weak but probably a thing. Diff in ACE and Wind densities
-
 354,-,2004-12-11T13:03,,2004-12-12T22:00,2004-12-13T06:46,-,2004-12-13T19:00,1,-,1,2,-,2,N,N,X,-,Sheath long. Could have messy FR?
-
 355,-,2004-12-27T05:00,,2004-12-27T16:12,2004-12-28T10:19,-,2004-12-28T17:58,2,-,1,2,-,1,N,N,X,-,A little turbulent but pretty straightforward
-
 356,-,2005-01-07T08:44,,2005-01-07T15:00,2005-01-08T07:12,-,2005-01-08T12:00,1,-,1,2,-,2,M?,N,X,-,FR is uniquely structured. More than 1? Not sure that interacts with next case even though close?
-
 357,-,2005-01-08T15:47,,2005-01-08T20:12,2005-01-09T18:00,-,-,2,-,1,2,-,-,N,N,-,-,Could maybe split off leg but is kinda rot B at end
-
-358,-,2005-01-16T09:27,,2005-01-16T16:10,2005-01-17T06:30,-,-,1,-,1,2,-,-,N,Y,X,-,Could maybe split FR. HSS behind?
-
+358,-,2005-01-16T09:27,,2005-01-16T16:10,2005-01-17T06:30,-,2005-01-17T08:06,1,-,1,2,-,-,N,Y,X,-,Could maybe split FR. HSS behind?
 359,-,2005-01-18T21:35,,2005-01-19T00:28,2005-01-19T13:23,2005-01-20T02:41,-,2,-,1,3,2,-,Y,Y?,X,A,Might be in tail of HSS? ACE plasma gap. Guessing at leg
-
-360,-,2005-01-21T16:46,,2005-01-21T23:45,2005-01-22T17:00,-,-,1,-,2,2,-,-,N,M?,X,W,SW v enhanced behind and SIR in HSS could explain sheath structure
-
-361,-,2005-01-31T08:22,,2005-01-31T20:05,2005-02-02T09:16,-,-,1,-,2,1,-,-,N,N,X,-,Could maybe split off leg/mixed but whole thing fairly turbulent
-
+360,-,2005-01-21T16:46,,2005-01-21T20:07,2005-01-22T04:35,2005-01-22T17:00,-,1,-,2,2,-,-,N,M?,X,W,SW v enhanced behind and SIR in HSS could explain sheath structure
+361,-,2005-01-31T08:22,2005-01-31T11:19,2005-01-31T20:05,2005-02-01T09:10,2005-02-01T23:55,2005-02-02T09:16,1,-,2,1,-,-,N,N,X,-,Could maybe split off leg/mixed but whole thing fairly turbulent
 362,-,2005-02-16T10:33,,2005-02-16T12:14,2005-02-16T23:30,-,-,1,-,1,1,-,-,N,N,X,-,Small and turbulent but clear signature
-
 363,-,2005-02-17T22:00,,2005-02-18T14:52,2005-02-19T06:00,-,2005-02-19T08:23,1,-,1,2,-,1,N,N,-,-,Little B rot but smooth
-
-364,-,2005-02-20T15:32,,2005-02-20T20:23,2005-02-21T12:10,-,2005-02-22T07:11,2,-,2,3,-,2,N,N,-,-,Mixed could also be leg but not clear enough to be certain. Not quite interacting with next?
-
-365,-,2005-02-22T10:00,,2005-02-22T14:00,2005-02-23T19:00,-,-,2,-,2,2,-,-,N,N,GX,W,Not quite interacting with prev? Could add mixed?
-
+364,-,2005-02-20T15:32,2005-02-20T20:23,2005-02-21T01:51,2005-02-22T00:36,-,2005-02-22T10:00,2,-,2,3,-,2,N,N,-,-,Mixed could also be leg but not clear enough to be certain. Not quite interacting with next?
+365,-,2005-02-22T07:11,,2005-02-22T14:00,2005-02-23T19:00,-,-,2,-,2,2,-,-,N,N,GX,W,Not quite interacting with prev? Could add mixed?
 366,-,2005-05-07T18:23,,2005-05-08T17:04,2005-05-09T13:34,2005-05-11T04:30,-,0,-,1,2,3,-,N,N,GX,-,Very extended but looks like hits core and leg
-
-367,-,2005-05-15T02:10,,2005-05-15T05:15,2005-05-15T22:12,2005-05-19T02:51,-,0,-,0,2,3,-,N,N,X,-,Clean shock/front and long leg
-
-368,-,2005-05-20T03:00,,2005-05-20T06:50,2005-05-21T05:20,2005-05-22T02:23,-,1,-,2,3,2,-,N,N,X,-,Lot of structure in FR. Attempted to split off leg
-
+367,-,2005-05-15T02:10,2005-05-15T05:15,2005-05-15T10:35,2005-05-16T22:47,2005-05-19T02:51,-,0,-,0,2,3,-,N,N,X,-,Clean shock/front and long leg
+368,-,2005-05-20T03:00,2005-05-20T06:50,2005-05-20T15:06,2005-05-21T09:47,2005-05-22T02:23,-,1,-,2,3,2,-,N,N,X,-,Lot of structure in FR. Attempted to split off leg
 369,370,2005-05-28T03:18,,2005-05-28T23:23,2005-05-29T06:35,2005-05-29T08:55,2005-05-29T14:45,2,-,2,2,2,2,N,N,X,-,Fairly confusing. Think little bit of core then shock from next case within leg?
-
-370,369; 371,2005-05-29T08:56,,2005-05-30T01:05,2005-05-30T15:20,-,2005-05-30T23:00,1,-,2,2,-,1,N,N,-,-,Attempted to split mixed region
-
+370,369; 371,2005-05-29T08:56,2005-05-29T22:19,2005-05-30T05:50,2005-05-30T15:20,-,2005-05-30T23:00,1,-,2,2,-,1,N,N,-,-,Attempted to split mixed region
 371,370,2005-05-30T23:00,,2005-05-31T02:22,2005-05-31T17:5,-,2005-06-01T03:05,1,-,1,3,-,2,N,N,-,-,Definitely gets mixed by end but complete guess on bound
-
 372,-,2005-06-12T06:57,,2005-06-12T15:00,2005-06-13T05:20,2005-06-13T13:00,-,1,-,1,2,1,-,N,N,X,-,Fairly clean case
-
-373,374?,2005-06-14T17:55,,2005-06-15T05:15,2005-06-16T08:08,-,-,1,-,1,1,-,-,N,Y?,X,-,Interacts with next but that is actuallyHSS?
-
-374,373,-,,-,-,-,-,-,-,-,-,-,-,-,-,X,-,Is HSS? T decrease is minimal and B pretty turbulent and unstructured.
-
+373,374,2005-06-14T17:55,,2005-06-15T05:15,2005-06-16T08:08,-,-,1,-,1,1,-,-,N,Y?,X,-,Interacts with next but that is actuallyHSS?
+374,373,2005-06-16T08:08,2005-06-16T13:32,2005-06-16T17:00,2005-06-17T19:00,-,-,-,-,-,-,-,-,-,-,X,-,Is HSS? T decrease is minimal and B pretty turbulent and unstructured.
 375,-,2005-07-10T02:42,,2005-07-10T10:47,2005-07-11T06:35,2005-07-12T04:00,2005-07-12T14:23,1,-,0,1,3,3,M?,N,GX,-,Guessing at splitting
-
 376,-,2005-07-17T00:50,,2005-07-17T15:18,2005-07-17T21:27,2005-07-18T05:30,2005-07-18T23:00,1,-,1,2,3,3,N,N,X,-,Guessing at tail end
-
 377,-,-,,2005-08-08T23:33,2005-08-09T11:33,-,2005-08-09T17:24,-,-,2,2,-,3,N,N,X,-,Small weak event but clear T signature. Not quite interacting with next?
-
 378,-,2005-08-10T04:47,,2005-08-10T06:14,2005-08-10T10:29,-,2005-08-10T13:26,3,-,2,2,-,2,N,N,-,-,Small weak event
-
 379,380,2005-08-23T19:28,,2005-08-23T22:47,2005-08-24T05:38,-,2005-08-24T08:22,2,-,2,2,-,-,N,N,X,-,Not convinced this is a thing but trying based on smooth phi and Tdrop. Followed by massive shock
-
-380,379,2005-08-24T05:38,,2005-08-24T14:50,2005-08-24T20:34,2005-08-25T12:45,-,1,-,1,2,2,-,N,N,X,-,Leg is turbulent but cannot pick a bound. Super intense tiny FR in sheath
-
-381,-,2005-09-02T13:32,,2005-09-02T19:37,2005-09-03T05:06,-,-,1,-,1,2,-,-,M?,M?,X,-,SW v is a bit high after 
-
-382,383,2005-09-11T00:59,,2005-09-11T05:41,2005-09-11T17:01,2005-09-12T06:00,-,1,-,1,3,1,-,N,N,X,AW,Someones plasma has issues. Or both.
-
+380,379,2005-08-24T05:38,2005-08-24T12:29,2005-08-24T14:53,2005-08-24T23:00,-,2005-08-25T12:45,1,-,1,2,2,-,N,N,X,-,Leg is turbulent but cannot pick a bound. Super intense tiny FR in sheath
+381,-,2005-09-02T13:32,2005-09-02T17:33,2005-09-02T19:37,2005-09-03T05:06,-,-,1,-,1,2,-,-,M?,M?,X,-,SW v is a bit high after 
+382,383,2005-09-11T00:59,2005-09-11T04:48,2005-09-11T05:41,2005-09-11T17:01,2005-09-12T06:00,-,1,-,1,3,1,-,N,N,X,AW,Someones plasma has issues. Or both.
 383,382; 384?,2005-09-12T06:00,,2005-09-12T20:11,2005-09-12T23:23,2005-09-13T09:00,-,0,-,1,3,1,-,N,Y?,X,-,Short FR core but second part is leg smooth. HSS behind (next case)?
-
-384,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,X,-,Is HSS? no T drop and B pretty turbulent and unstructured.
-
-385,-,2005-09-15T08:25,,2005-09-15T15:57,2005-09-16T17:38,-,-,1,-,2,2,-,-,N,M?,X,-,Fairly turbulent. Might be HSS? Or just ugly
-
+384,-,2005-09-13T09:00,,2005-09-13T16:00,2005-09-14T08:00,-,-,-,-,-,-,-,-,-,-,X,-,Is HSS? no T drop and B pretty turbulent and unstructured.
+385,-,2005-09-15T08:25,2005-09-15T13:53,2005-09-15T17:28,2005-09-16T17:38,-,-,1,-,2,2,-,-,N,M?,X,-,Fairly turbulent. Might be HSS? Or just ugly
 386,-,-,,2005-09-21T01:02,2005-09-21T17:10,-,-,-,-,2,2,-,-,N,N,-,-,Weak and glancing but probably a thing.
-
 387,-,-,,2005-10-31T02:00,2005-10-31T18:42,-,2005-10-31T21:00,-,-,2,2,-,2,M?,N,-,-,Slow case but clear
-
 388,-,-,,2005-12-31T14:15,2006-01-01T13:27,-,-,-,-,1,1,-,-,N,M?,X,A,Weak glancing but smooth. Maybe in weak HSS. Shock at tail end?
-
 389,-,2006-02-05T18:14,,2006-02-05T20:40,2006-02-06T11:22,-,2006-02-06T12:41,2,-,1,2,-,2,N,N,-,-,Maybe add leg or just extended at back because of exp?
-
-390,391,2006-04-13T11:20,,2006-04-13T15:45,2006-04-14T01:47,2006-04-14T08:20,2006-04-13T20:36,-,-,1,2,2,2,M?,N,X,-,Think is single case. Lepping make multi
-
+390,391,2006-04-13T11:20,2006-04-13T14:18,2006-04-13T15:45,2006-04-13T20:48,2006-04-14T08:20,2006-04-14T13:11,-,-,1,2,2,2,M?,N,X,-,Think is single case. Lepping make multi
 391,390,-,,2006-04-14T13:11,2006-04-14T19:27,-,2006-04-14T23:15,,-,2,2,-,3,N,Y?,X,W,Small Wind gap. SW v is pretty elevated after
-
 392,-,-,,2006-06-14T08:02,2006-06-14T16:25,-,-,-,-,3,3,-,-,N,M?,GX,-,Probably a thing? SW v a little high but further behind
-
 393,-,-,,2006-06-17T21:41,2006-06-18T03:53,-,2006-06-18T08:07,-,-,2,2,-,3,N,M?,-,-,Weak but smooth. Strong B enhancement toward rear. Maybe interacting with weak HSS behind?
-
 394,-,2006-07-09T20:40,,2006-07-10T20:06,2006-07-11T05:28,2006-07-11T14:44,2006-07-11T17:24,1,-,1,2,3,2,N,M?,GX,-,Weak case with enhancement toward rear. Maybe interacting with weak HSS behind?
-
 395,-,2006-08-19T10:57,,2006-08-20T13:26,2006-08-21T15:45,-,-,1,-,1,1,-,-,N,N,GX,-,Glancing or leg but clean signature
-
 396,-,2006-08-30T21:06,,2006-08-31T06:17,2006-09-01T07:00,-,-,1,-,1,1,-,-,Y,N,X,-,Could maybe add mixed.
-
 397,-,2006-09-30T02:52,,2006-09-30T08:35,2006-09-30T19:44,-,2006-10-01T08:55,1,-,1,1,-,2,M?,N?,GX,-,Guessing on mixed and prob mixed with leg. Just slightly fast slow wind after?
-
 398,-,-,,2006-11-01T22:12,2006-11-02T14:22,-,-,-,-,2,1,-,-,N,N,X,W,Mini Wind gap. Weak event 
-
 399,-,-,,2006-11-18T07:11,2006-11-20T04:47,-,-,-,-,3,3,-,-,M?,N,X,-,Probably a thing but weak and turbulent but big?
-
-400,-,2006-11-28T13:00,,2006-11-29T05:16,2006-11-30T06:23,-,2006-11-30T14:15,2,-,1,2,-,3,N,N,X,W,Wind B and plasma gaps. Guessing at very front and very back of whole event
+400,-,2006-11-28T13:00,2006-11-28T19:31,2006-11-29T05:16,2006-11-30T06:23,-,2006-11-30T14:15,2,-,1,2,-,3,N,N,X,W,Wind B and plasma gaps. Guessing at very front and very back of whole event
 401,-,2006-12-14T13:51,,2006-12-14T22:36,2006-12-15T08:10,-,2006-12-15T16:18,1,-,1,2,-,3,N,N,X,-,Too far from next case to interact?
-402,403,-,,2006-12-15T20:38,2006-12-16T17:34,-,-,-,-,3,3,-,-,N,N,-,-,Garbage but maybe a thing based on T? Interacts with next case
+402,403,-,2006-12-15T20:38,2006-12-16T05:17,2006-12-16T17:34,-,2006-12-16T19:00,-,-,3,3,-,-,N,N,-,-,Garbage but maybe a thing based on T? Interacts with next case
 403,402,2006-12-16T17:34,,2006-12-17T01:21,2006-12-17T19:30,-,-,1,-,2,3,-,-,N,N,-,A,Mini ACE gap. FR is very weak but smooth. Sheath is there but FR could be nothing
 404,-,2007-01-14T11:44,,2007-01-14T14:05,2007-01-15T07:07,-,-,1,-,2,2,-,-,N,N,GX,-,Exceptionally slow event. Too far from next to interact?
 405,-,-,,2007-01-15T22:09,2007-01-16T03:55,-,-,-,-,3,2,-,-,N,M?,,-,Small smooth region but very weak. Something faster behind but could just be slow SW
@@ -490,7 +405,7 @@
 410,-,-,,2007-09-19T17:36,2007-09-20T03:55,-,-,-,-,2,2,-,-,N,N,-,-,Weak case
 411,-,2007-11-19T17:22,,2007-11-19T23:29,2007-11-20T09:16,-,2007-11-20T11:31,1,-,1,2,-,1,N,N,GX,-,Faster wind sufficiently far behind to not interact?
 412,-,-,,2007-12-25T16:06,2007-12-26T07:39,-,-,-,-,2,2,-,-,N,N,X,-,Weak case
-413,-,-,,2008-04-15T12:41,2008-04-16T00:05,-,-,-,-,2,2,-,-,N,N,X,-,Weak case
+413,-,-,,2008-04-15T12:41,2008-04-15T19:05,2008-04-16T00:05,-,-,-,2,2,-,-,N,N,X,-,Weak case
 414,-,-,,2008-05-23T01:12,2008-05-23T10:47,-,-,-,-,2,2,-,-,N,N,X,-,Weak case. Smooth B but minimal T drop
 415,-,-,,2008-07-25T13:17,2008-07-25T23:12,-,-,-,-,2,2,-,-,N,N,X,-,Weak case
 416,-,2008-09-03T14:50,,2008-09-03T16:33,2008-09-04T00:14,-,2008-09-04T03:50,2,-,2,2,-,1,N,M?,GX,-,Sheath based only on n. SW v is a bit elevated behind.
@@ -501,7 +416,7 @@
 421,-,2009-01-02T01:41,,2009-01-02T02:49,2009-01-02T15:05,-,-,3,-,3,3,-,-,N,N,-,W,No Wind and ACE is low res. Weak and flank so big guess
 422,-,2009-01-18T21:00,,2009-01-19T01:30,2009-01-19T05:00,-,2009-01-19T06:19,3,-,1,1,-,2,N,N,V,-,Weaker and short. Guessing at mixed
 423,-,2009-01-25T21:22,,2009-01-26T05:02,2009-01-26T15:00,2009-01-26T14:51,2009-01-26T16:50,2,-,1,1,1,2,Y,N,-,-,Attempting to split.
-424,-,2009-02-03T19:21,,2009-02-04T00:18,2009-02-04T13:51,-,2009-02-04T20:13,1,-,1,2,-,3,N,N,-,-,FR is turbulent but strong signature
+424,-,2009-02-03T19:21,2009-02-03T23:16,2009-02-04T02:48,2009-02-04T16:00,-,2009-02-04T20:13,1,-,1,2,-,3,N,N,-,-,FR is turbulent but strong signature
 425,-,2009-03-11T22:04,,2009-03-12T00:26,2009-03-12T08:33,2009-03-12T16:38,2009-03-13T01:40,1,-,2,2,3,2,N,Y,GV,-,Strong compression at rear. HSS behind? Pretty messy FR and attempted to split
 426,-,2009-04-05T15:44,,2009-04-05T17:02,2009-04-06T04:48,-,-,2,-,2,2,-,-,N,N,V,-,Weak but smooth
 427,-,2009-04-22T11:16,,2009-04-22T14:09,2009-04-22T20:49,-,-,3,-,2,2,-,-,N,N,V,-,Weak event. Not sure sheath is thing
@@ -517,7 +432,7 @@
 437,-,2009-10-29T01:26,,2009-10-29T05:12,2009-10-29T23:00,-,-,3,-,2,1,-,-,Y?,N,-,-,Turbulent structured FR that is hard to break up
 438,-,-,,2009-11-01T10:04,2009-11-02T08:21,-,-,-,-,3,2,-,-,N,N,-,-,Enhancement at back of FR. Too messy to split up
 439,-,2009-11-13T20:00,,2009-11-14T10:47,2009-11-14T23:00,2009-11-15T11:45,-,2,-,1,2,3,-,N,N,-,-,Not confident on leg
-440,-,2009-12-12T04:47,,2009-12-12T20:00,2009-12-13T21:54,-,2009-12-14T04:47,1,-,2,2,-,3,N,N,V,-,Could maybe add leg
+440,-,2009-12-12T04:47,2009-12-12T18:15,2009-12-12T21:33,2009-12-13T21:54,-,2009-12-14T04:47,1,-,2,2,-,3,N,N,V,-,Could maybe add leg
 441,-,2009-12-19T10:00,,2009-12-19T13:00,2009-12-20T17:00,-,-,3,-,3,3,-,-,N,N,V,W,Wind gap at back. Lots of FR stucture but too messy to split up. Smooth sheath?
 442,-,2010-01-01T22:04,,2010-01-02T00:14,2010-01-02T19:25,-,2010-01-03T10:00,2,-,2,3,-,3,N,N,-,W,No Wind and ACE is low res. Weak event. Could be multiple weak things?
 443,-,2010-02-07T18:04,,2010-02-07T23:17,2010-02-08T08:44,2010-02-08T22:48,-,2,-,1,3,2,-,N,N,-,-,Think has leg. Do we trust Wind n enhancement in leg?
@@ -527,20 +442,19 @@
 447,448,-,,2010-02-15T11:23,2010-02-15T17:38,-,2010-02-15T22:28,-,-,3,1,-,-,N,N,-,-,Weak event. Mixed from shock of next case
 448,447,2010-02-15T17:38,,2010-02-16T04:02,2010-02-16T11:32,-,-,1,-,2,2,-,-,N,N,-,-,Interacts with prev case
 449,450,2010-02-19T17:15,,2010-02-19T19:57,2010-02-20T12:17,-,2010-02-20T23:10,2,-,1,2,-,2,N,N,-,-,Interaction with next? A little far 
-450,449,-,,2010-02-20T23:10,2010-02-21T11:49,-,2010-02-22T02:12,-,-,1,2,-,2,N,N,-,A,Pretty clear case but turbulent back half
+450,449,-,2010-02-20T18:00,2010-02-20T23:10,2010-02-21T11:49,-,2010-02-22T02:12,-,-,1,2,-,2,N,N,-,A,Pretty clear case but turbulent back half
 451,-,-,,2010-02-22T14:45,2010-02-22T21:33,-,-,-,-,3,3,-,-,N,N,-,-,Probably a thing
 452,-,-,,2010-03-09T23:20,2010-03-10T07:37,-,-,-,-,3,3,-,-,N,N,GV,-,Weak case. Very much a guess
 453,-,-,,2010-03-23T22:29,2010-03-24T16:55,-,-,-,-,2,2,-,-,N,N,-,-,Long and structured but too messy to split up
 454,-,2010-04-05T07:54,,2010-04-05T11:59,2010-04-05T21:18,2010-04-06T13:12,2010-04-06T16:48,1,-,1,2,1,2,N,N,V,-,Fairly clean signature
 455,-,-,,2010-04-09T18:00,2010-04-10T10:26,-,2010-04-10T16:00,-,-,2,3,-,3,N,N,-,-,Is a thing but bounds are hard
 456,-,2010-04-11T12:20,,2010-04-12T01:08,2010-04-12T12:50,-,2010-04-12T15:00,1,-,1,2,-,2,N,N,V,-,Glancing encounter
-457,-,-,,2010-04-22T05:06,2010-04-22T15:23,-,-,-,-,2,2,-,-,N,N,V,-,Weak case
+457,-,-,2010-04-22T04:02,2010-04-22T05:06,2010-04-22T15:23,-,-,-,-,2,2,-,-,N,N,V,-,Weak case
 458,-,-,,2010-04-30T06:00,2010-05-01T07:12,-,-,-,-,2,3,-,-,N,N,-,-,Not convinced is thing. Probably is just weak
 459,-,2010-05-18T02:23,,2010-05-18T05:01,2010-05-18T15:28,-,2010-05-19T07:26,2,-,1,2,-,2,N,M?,GV,-,Does look like HSS coming behind but too far away?
-460,-,2010-05-28T01:55,,2010-05-28T19:12,2010-05-29T13:14,-,2010-05-29T21:18,1,-,1,2,-,2,M?,M?,GV,-,Mixed until SIR/HSS behind?
+460,-,2010-05-28T01:55,2010-05-28T17:12,2010-05-28T19:12,2010-05-29T13:14,-,2010-05-29T21:18,1,-,1,2,-,2,M?,M?,GV,-,Mixed until SIR/HSS behind?
 461,-,2010-06-21T03:35,,2010-06-21T07:17,2010-06-22T06:47,-,2010-06-22T14:17,2,-,1,2,-,2,N,N,V,-,Smooth rot. Could maybe split off leg but gets mixed
-462,463,2010-08-03T17:05,,2010-08-04T02:52,2010-08-04T09:40,-,-,0,-,2,1,-,-,N,N,-,-,Interacts with next and back end gets compressed
-463,462,-,,2010-08-04T09:54,2010-08-05T00:56,-,-,-,-,1,2,-,-,N,N,-,-,Could argue just tail/leg of previous?
+462,-,2010-08-03T17:05,2010-08-04T01:33,2010-08-04T04:00,2010-08-04T09:40,2010-08-05T00:56,-,0,-,2,1,-,-,N,N,-,-,Interacts with next and back end gets compressed
 464,-,-,,2010-08-08T09:10,2010-08-08T17:00,-,-,-,-,3,3,-,-,M?,N,V,-,Short and weak but probably a thing
 465,-,-,,2010-09-15T02:24,2010-09-15T10:37,2010-09-16T00:00,2010-09-16T11:58,-,-,3,3,3,3,N,Y?,-,-,HSS behind? Messy but attempted to split
 466,-,2010-09-25T11:45,,2010-09-25T13:11,2010-09-26T08:09,-,-,3,-,2,2,-,-,N,N,V,-,Weak but smooth. Hint of compression in rear?
@@ -548,35 +462,65 @@
 468,-,2010-10-17T01:11,,2010-10-17T05:18,2010-10-18T20:39,-,-,1,-,1,1,-,-,N,N,-,-,Bounds are relatively clear but FR is chaos
 469,470,2010-10-30T09:15,,2010-10-30T15:41,2010-10-30T21:21,-,2010-10-31T02:09,3,-,3,3,-,3,N,N,-,-,Not fully convinced is thing. Mixed until next?
 470,469,2010-10-31T02:09,,2010-10-31T05:16,2010-11-01T06:10,2010-11-01T18:37,2010-11-01T20:38,1,-,1,3,3,2,N,N,-,-,Guessing at split
+
 471,-,2010-12-19T20:35,,2010-12-19T22:33,2010-12-20T19:10,-,2010-12-20T22:04,2,-,2,2,-,2,N,N,V,-,Could extend sheath further back?
+
 472,-,-,,2010-12-28T03:00,2010-12-28T15:00,-,-,-,-,3,3,-,-,N,N,-,A,Guessing mostly based on T
+
 473,-,2011-01-24T07:00,,2011-01-24T10:33,2011-01-24T23:49,2011-01-25T15:47,2011-01-25T22:04,1,-,2,3,3,2,N,N,-,-,Very long non-rotating portion of FR. Calling leg and not separate case?
+
 474,-,2011-02-04T01:46,,2011-02-04T09:18,2011-02-04T13:11,-,2011-02-04T20:00,1,-,1,1,-,2,N,Y,GV,-,Mixed is shocked from HSS behind. This is a guess but confident in bounds if true
+
 475,-,2011-02-14T15:06,,2011-02-14T17:27,2011-02-15T02:25,-,-,1,-,2,1,-,-,N,Y?,GV,-,HSS behind? Small but def a thing
+
 476,-,-,,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Think this is just part of the next sheath
+
 477,-,2011-02-18T01:00,,2011-02-18T19:55,2011-02-20T08:42,-,-,1,-,1,1,-,-,N,N,-,-,Glancing blow but clean signature
+
 478,-,-,,2011-02-25T02:51,2011-02-25T20:14,-,-,-,-,3,2,-,-,M?,N,-,W,Mini gap in Wind. Not convinced is a thing.
+
 479,-,2011-03-06T03:05,,2011-03-06T09:00,2011-03-07T19:01,2011-03-08T09:45,-,1,-,1,2,2,-,N,N,V,W,Mini gap in Wind. Messy FR but smooth back leg portion?
+
 480,-,2011-03-10T06:48,,2011-03-11T00:42,2011-03-11T16:55,-,-,1,-,0,1,-,-,N,Y,GV,-,SIR from HSS right behind. Could maybe add mixed
+
 481,482,2011-03-29T15:12,,2011-03-30T00:21,2011-03-31T10:20,2011-04-01T07:38,2011-04-01T14:51,0,-,0,1,2,1,N,N,G,-,Nice long case with clear features. Interacts with next
+
 482,481,2011-04-01T15:15,,2011-04-01T16:39,2011-04-02T12:26,-,-,2,-,2,2,-,3,N,Y?,G,-,Messy but probably a thing? HSS behind
+
 483,-,2011-04-05T18:00,,2011-04-05T23:05,2011-04-06T09:02,-,-,1,-,2,2,-,-,N,N?,-,-,Some sort of n/B enhancement behind but too slow for HSS?
+
 484,-,2011-04-11T06:55,,2011-04-11T16:05,2011-04-12T08:59,-,-,3,-,3,3,-,-,N,Y?,GV,-,Not convinced is real. Def some form of sheath and followed by HSS. Tiny smooth region?
+
 485,-,-,,2011-04-23T00:01,2011-04-23T18:51,2011-04-24T11:20,2011-04-24T13:11,-,-,2,3,3,3,N,Y?,GV,-,HSS behind? A little weak and might be too far. Messy long FR and attempted to split
+
 486,-,2011-04-29T09:07,,2011-04-29T13:55,2011-04-29T20:52,-,-,2,-,1,1,-,-,N,Y,GV,-,HSS behind?
+
 487,-,2011-05-28T00:14,,2011-05-28T05:31,2011-05-28T20:26,-,2011-05-29T01:04,2,-,1,2,-,2,M?,Y?,V,-,Enhancement in ACE? HSS behind but too far?
+
 488,-,2011-06-04T20:06,,2011-06-05T01:57,2011-06-05T07:23,2011-06-05T18:18,-,1,-,2,2,2,-,N,N,-,-,Wind n goes a little crazy. Think leg not 2 separate FR (like Lepping)
+
 489,-,2011-06-17T02:09,,2011-06-17T05:24,2011-06-17T13:24,2011-06-18T00:16,-,1,-,1,2,2,-,N,N,-,-,Guessing at leg
+
 490,-,2011-06-30T13:26,,2011-06-30T18:43,2011-07-01T05:16,-,-,2,-,1,1,-,-,N,N?,-,-,Compression in back just from normal slow SW? Too slow for sheath?
+
 491,-,2011-07-03T18:24,,2011-07-03T20:48,2011-07-04T16:30,-,2011-07-04T21:26,2,-,1,2,-,3,N,N,-,-,Weak case but clear signature
+
 492,-,2011-07-06T02:13,,2011-07-06T17:20,2011-07-06T23:41,2011-07-07T10:50,-,2,-,2,2,1,-,N,N,-,-,Might be leg. Might not
+
 493,-,2011-07-08T22:36,,2011-07-09T01:36,2011-07-09T08:13,-,-,3,-,1,3,-,-,N,N,GV,-,Too slow for sheath? Just going off n structure
+
 494,-,2011-07-14T12:00,,2011-07-15T04:00,2011-07-16T01:12,-,2011-07-16T10:20,1,-,1,2,-,2,N,N?,V,-,Might be embedded in HSS but v profile is very smooth? FR messy. No leg? Multi FR?
+
 495,-,2011-08-04T21:15,,2011-08-04T22:18,2011-08-05T14:00,2011-08-05T14:29,-,2,-,2,2,2,-,N,N,-,-,Messy FR and leg?
+
 496,-,2011-08-05T17:20,,2011-08-06T22:17,2011-08-08T00:36,-,-,1,-,1,2,-,-,N,N?,V,-,Mega sheath and weak FR? Long flank/leg encounter? Maybe embedded in HSS
+
 497,498,-,,2011-09-08T10:00,2011-09-09T11:47,-,-,-,-,3,1,-,-,N,N,-,-,Not convinced is thing. Very weak with some T signature. Shock behind
+
 498,497,2011-09-09T11:46,,2011-09-09T18:20,2011-09-10T15:00,-,2011-09-10T21:56,0,-,2,3,-,3,N,Y?,V,W,Hard to split up bc messy. Embedded in HSS?
+
 499,500,-,,2011-09-16T19:00,2011-09-17T02:56,-,2011-09-17T05:00,-,-,1,1,-,2,N,N,-,-,Weak B but clear T sigs. Mixed from interaction with next
+
 500,499; 501,2011-09-17T02:56,,2011-09-17T15:38,2011-09-17T22:15,2011-09-18T06:00,2011-09-18T10:00,0,-,0,1,2,2,N,N,-,-,Pretty clean signature. Interacts with before and after
 501,500,2011-09-18T10:00,,2011-09-18T12:24,2011-09-18T20:12,-,2011-09-18T23:36,2,-,1,1,-,3,N,N,-,-,No rotation but very smooth
 502,-,2011-09-22T03:00,,2011-09-22T15:00,2011-09-23T03:00,-,-,2,-,1,3,-,-,N,N,-,-,Weak questionable case but hint of a T drop
