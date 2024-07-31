@@ -596,7 +596,6 @@ if ICEcase:
                     if (ib1 < endPlotDT) & (ib2 > startPlotDT):
                         axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )    
             elif (prevICE[1] == '-') & (prevICE[2] not in ['-','']):
-                print (prevICE)   
                 ib1 = datetime.datetime.strptime(prevICE[2], "%Y-%m-%dT%H:%M" )
                 ib2 = datetime.datetime.strptime(prevICE[3], "%Y-%m-%dT%H:%M" )
                 axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[1], zorder=0, alpha=alp )
@@ -717,7 +716,7 @@ if addLabels:
             axes[0].text(0.87, nowy-0.04, '+Trail CME', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='k', weight='bold')
         elif friends != '-':
             friend = int(friends)
-            if friend < myID+1:
+            if friend < int(CMEchoice):
                 axes[0].text(0.87, nowy-0.02, '+Prev CME', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='k', weight='bold')
             else:
                 axes[0].text(0.87, nowy-0.02, '+Trail CME', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='k', weight='bold')
