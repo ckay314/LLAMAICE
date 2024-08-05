@@ -26,6 +26,9 @@ obsLW = 1.5 # linewidth
 ACEcol = 'k'
 Windcol = 'gray'
 
+# full names of HSS cats
+fullnames = {'D':'DONKI', 'V':'VARSITI', 'X':'Xystouris', 'G':'Grandin'}
+        
 
 
 # The other CME catalogs
@@ -576,7 +579,7 @@ if ICEcase:
                     
         
     # shade in next case
-    if (myID != int(totalCMEs)-1) & shadeICE:
+    if (myID != len(ICEdata[:,0])-1) & shadeICE:
         prevICE = 'LLAMAICE', ICEdata[myID+1, 2], ICEdata[myID+1, 3], ICEdata[myID+1, 4], ICEdata[myID+1, 5], ICEdata[myID+1, 6], ICEdata[myID+1, 7]
         if  ICEdata[myID+1, 4] == '-':
             prevICE = 'LLAMAICE', ICEdata[myID+2, 2], ICEdata[myID+2, 3], ICEdata[myID+2, 4], ICEdata[myID+2, 5], ICEdata[myID+2, 6], ICEdata[myID+2, 7]
@@ -640,10 +643,9 @@ if plotHSS:
     yren = pend.year
     yrLen = (datetime.datetime(yren+1,1,1,0,0,0) - datetime.datetime(yren,1,1,0,0,0)).total_seconds()
     roughend = yren + (pend - datetime.datetime(yren-1,12,31,0,0,0)).total_seconds() / yrLen
-
     HSSidxA = np.where((HSSdata[:,1].astype(float) > roughstart) & (HSSdata[:,1].astype(float) < roughend))
     HSSidxB = np.where((HSSdata[:,0].astype(float) > roughstart) & (HSSdata[:,0].astype(float) < roughend))
-    HSSidxC = np.where((HSSdata[:,0].astype(float) < roughstart) & (HSSdata[:,1].astype(float) > roughend))
+    HSSidxC = np.where((HSSdata[:,0].astype(float) < roughstart) & (HSSdata[:,1].astype(float) > roughend) & (HSSdata[:,2] != 'D'))
     HSSidx  = np.unique(np.concatenate(HSSidxA+HSSidxB+HSSidxC))
     myHSScats = []
     
@@ -659,7 +661,8 @@ if plotHSS:
             en_tm = datetime.datetime.strptime(HSSdata[idx,5]+'T'+HSSdata[idx,6], "%Y-%m-%dT%H:%M:%S" )
         if myCat == 'D':
             st_tm = datetime.datetime.strptime(HSSdata[idx,3]+'T'+HSSdata[idx,4], "%Y-%m-%dT%H:%M:%S" ) 
-            en_tm = st_tm + datetime.timedelta(hours=2)           
+            en_tm = st_tm + datetime.timedelta(hours=2)   
+                    
         axes[-1].fill_between([st_tm, en_tm], [dy-0.1,dy-0.1], [dy,dy], facecolor=catStyles[myCat][1])
            
     
@@ -676,7 +679,10 @@ if addLabels:
     if ICEdata[myID][1] != '-':
         axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
     prevPBend = datetime.datetime.strptime(plotbounds[bidx[0]-1][3], "%Y-%m-%dT%H:%M" )
-    nextPBstr = datetime.datetime.strptime(plotbounds[bidx[0]+1][2], "%Y-%m-%dT%H:%M" )
+    if (myID != len(ICEdata[:,0])-1):
+        nextPBstr = datetime.datetime.strptime(plotbounds[bidx[0]+1][2], "%Y-%m-%dT%H:%M" )
+    else:
+        nextPBstr = pend
     if (prevPBend > pstart) or (nextPBstr < pend):
         axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
 
