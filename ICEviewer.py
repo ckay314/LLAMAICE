@@ -214,6 +214,8 @@ if ICEcase:
         # Ignore duplicates (though all rm'ed now?)
         else:
            print ('Duplicate for '+myVals[0])
+           
+           
     # Save ICE separate
     ICEbounds = 'LLAMAICE', ICEdata[myID, 2], ICEdata[myID, 3], ICEdata[myID, 4], ICEdata[myID, 5], ICEdata[myID, 6],  ICEdata[myID, 7]
 
@@ -462,9 +464,15 @@ if plotCats:
     printNames = []
     print('')
     print ('Catalogs including this event:')
+    dupCats = {}
     for item in toPlot:
         if item[0] not in printNames:
             printNames.append(item[0])
+        else:
+            if item[0] in dupCats.keys():
+                dupCats[item[0]] +=1
+            else:
+                dupCats[item[0]] = 2
         if item[1] != 'None':
             for i in range(10):
                 thisDT = datetime.datetime.strptime(item[1], "%Y-%m-%dT%H:%M:%S" )
@@ -674,7 +682,10 @@ if addLabels:
     axes[0].annotate('', xy=(0.856, nowy-0.007), xycoords='figure fraction', xytext=(0.9823, nowy-0.007), arrowprops=dict(arrowstyle="-", color='k', lw=1.25))
     nowy -= 0.023
     for i in range(len(printNames)):
-        axes[0].text(0.87, nowy, printNames[i], horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=catCols[printNames[i]], weight='bold')
+        bonustext = ''
+        if printNames[i] in dupCats.keys():
+            bonustext = ' x'+str(dupCats[printNames[i]])
+        axes[0].text(0.87, nowy, printNames[i]+bonustext, horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=catCols[printNames[i]], weight='bold')
         nowy -= 0.02
     if ICEdata[myID][1] != '-':
         axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
