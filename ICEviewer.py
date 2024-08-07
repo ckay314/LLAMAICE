@@ -801,7 +801,7 @@ def runIt():
     CMEchoice = sys.argv[1]
     if CMEchoice in ['All', 'all', 'ALL']:
         for CMEchoice in ICEdata[:,0]:
-            if int(CMEchoice) > 977:
+            if int(CMEchoice) > -1: # convient to only loop through part if catches for some reason
                 checkCMEchoice(CMEchoice)
                 makeplot(saveIt = True)
         
