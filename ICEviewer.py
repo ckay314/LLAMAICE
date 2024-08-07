@@ -7,7 +7,7 @@ import matplotlib.dates as mdates
 
 obsDataPath = './ISdata/'
 figFolder   = './ICEpics/'
-figprefix   = 'LLAMAICE'
+figprefix   = 'LLAMAICE-'
 figtype     = '.png' 
 
 shadeICE = True
@@ -95,6 +95,7 @@ def checkCMEchoice(CMEchoice):
                 print('No LLAMAICE bounds only other catalog(s).')
                 dateStr = otherData[myoIDs[0],1]
             myYr = dateStr[0:4]
+            myDate = dateStr
             print ('Results for CME '+dateStr)
             myDT   = datetime.datetime.strptime(dateStr, "%Y-%m-%dT%H:%M" )
         else:
@@ -789,14 +790,14 @@ def makeplot(saveIt = False):
     if ICEcase:
         axes[9].text(0.05, 0.01, ICEdata[myID][-1], transform = fig.transFigure)  
     if saveIt:  
-        figName = figprefix+ICEdata[myID,0].zfill(4) + figtype
+        figName = figprefix+ICEdata[myID,0].zfill(4) + '_' + myDate[:-3] + myDate[-2:] + figtype
         plt.savefig(figFolder+figName)
         plt.close()
     else:
         plt.show()
 
 def runIt():
-    global CMEchoice
+    global CMEchoice, myDate
     CMEchoice = sys.argv[1]
     if CMEchoice in ['All', 'all', 'ALL']:
         for CMEchoice in ICEdata[:,0]:
@@ -806,7 +807,7 @@ def runIt():
         
     else:
         checkCMEchoice(CMEchoice)
-        makeplot()
+        makeplot(saveIt = False)
         
 if __name__ == '__main__':
     runIt()
