@@ -287,7 +287,11 @@ def makeplot(saveIt = False):
     # set time bound for ICE cases and reset y ranges based on subset of obs data
     if ICEcase:
         plotbounds = np.genfromtxt('plotBounds.dat', dtype=str)
-        bidx = np.where(plotbounds[:,0] == CMEchoice)[0]
+        if '-' in CMEchoice:
+            thisID = ICEdata[myID,0]
+            bidx = np.where(plotbounds[:,0] == thisID)[0]
+        else:
+            bidx = np.where(plotbounds[:,0] == CMEchoice)[0]
         pstart = datetime.datetime.strptime(plotbounds[bidx[0],2], "%Y-%m-%dT%H:%M" )
         pend   = datetime.datetime.strptime(plotbounds[bidx[0],3], "%Y-%m-%dT%H:%M" )
         axes[-1].set_xlim([pstart, pend])
