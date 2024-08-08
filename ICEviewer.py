@@ -466,6 +466,12 @@ def makeplot(saveIt = False):
                 axes[i].plot([item, item], bounds[i], 'gray', linestyle=':')
         for i in range(10):
             axes[i].set_ylim(bounds[i])
+    
+    else:
+        print ('her')
+        pstart = datetime.datetime.strptime(myDate, "%Y-%m-%dT%H:%M" ) - datetime.timedelta(days=1)
+        pend   = datetime.datetime.strptime(myDate, "%Y-%m-%dT%H:%M" ) + datetime.timedelta(days=3)
+        axes[-1].set_xlim([pstart, pend])
 
     # ============================== Plot the boundaries for this event ============================== 
     if plotCats:
@@ -699,15 +705,16 @@ def makeplot(saveIt = False):
                 bonustext = ' x'+str(dupCats[printNames[i]])
             axes[0].text(0.87, nowy, printNames[i]+bonustext, horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=catCols[printNames[i]], weight='bold')
             nowy -= 0.02
-        if ICEdata[myID][1] != '-':
-            axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
-        prevPBend = datetime.datetime.strptime(plotbounds[bidx[0]-1][3], "%Y-%m-%dT%H:%M" )
-        if (myID != len(ICEdata[:,0])-1):
-            nextPBstr = datetime.datetime.strptime(plotbounds[bidx[0]+1][2], "%Y-%m-%dT%H:%M" )
-        else:
-            nextPBstr = pend
-        if (prevPBend > pstart) or (nextPBstr < pend):
-            axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
+        if ICEcase:
+            if ICEdata[myID][1] != '-':
+                axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
+            prevPBend = datetime.datetime.strptime(plotbounds[bidx[0]-1][3], "%Y-%m-%dT%H:%M" )
+            if (myID != len(ICEdata[:,0])-1):
+                nextPBstr = datetime.datetime.strptime(plotbounds[bidx[0]+1][2], "%Y-%m-%dT%H:%M" )
+            else:
+                nextPBstr = pend
+            if (prevPBend > pstart) or (nextPBstr < pend):
+                axes[0].text(0.862, nowy-0.02, '$^*$Nearby Events', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color='gray', weight='bold')
 
         # ICE regions
         nowy = 0.7
