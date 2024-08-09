@@ -10,10 +10,11 @@ figFolder   = './ICEpics/'
 figprefix   = 'LLAMAICE-'
 figtype     = '.png' 
 
-shadeICE = True
-plotCats = True
-plotHSS = True
+shadeICE  = True
+plotCats  = True
+plotHSS   = True
 addLabels = True
+saveIt    = False
 
 # ICE region colors
 cols = ['r', 'orange', 'b', 'b', 'orange']     
@@ -108,6 +109,9 @@ def makeplot(saveIt = False):
     hasACE = True
     if int(myYr) < 1997:
         hasACE = False
+    elif int(myYr) == 1997:
+        if myDT < datetime.datetime(1997,8,25,0,0,0):
+            hasACE = False
     if hasACE:
         aceDataFull = np.genfromtxt(obsDataPath+'ace5/ace_5min_'+myYr+'.dat', dtype=str)
     windDataFull = np.genfromtxt(obsDataPath+'wind5/wind_MFISWE_5min_'+myYr+'.dat', dtype=str)
@@ -211,8 +215,6 @@ def makeplot(saveIt = False):
             betaIdxW.append(idx)
     # calc plasma beta
     betaWind = (4.16e-5 * TsWind[betaIdxW] + 5.34) * nsWind[betaIdxW]/BtotWind[betaIdxW]**2 # omni version of calc w/Tp, np, dunno where 5.34 comes from
-
-
 
     # ============================== Read in ICE boundaries ==============================
     toPlot = []
@@ -818,7 +820,7 @@ def runIt():
         
     else:
         checkCMEchoice(CMEchoice)
-        makeplot(saveIt = False)
+        makeplot(saveIt = saveIt)
         
 if __name__ == '__main__':
     runIt()
