@@ -14,7 +14,7 @@ shadeICE  = True
 plotCats  = True
 plotHSS   = True
 addLabels = True
-saveIt    = False
+saveIt    = True 
 
 # ICE region colors
 cols = ['r', 'orange', 'b', 'b', 'orange']     
@@ -37,7 +37,7 @@ fullnames = {'D':'DONKI', 'V':'VARSITI', 'X':'Xystouris', 'G':'Grandin'}
 otherData = np.genfromtxt('revICEless.dat', dtype=str)
 totalCMEs = otherData[-1,0]
 # LLAMAICE results which are separate bc more bounds
-ICEdata   = np.genfromtxt('LLAMAICE0.3.csv', delimiter=',', dtype=str)
+ICEdata   = np.genfromtxt('LLAMAICE0.4.csv', delimiter=',', dtype=str)
 
 
 global ICEcase, failCase
@@ -117,9 +117,9 @@ def makeplot(saveIt = False):
     windDataFull = np.genfromtxt(obsDataPath+'wind5/wind_MFISWE_5min_'+myYr+'.dat', dtype=str)
 
     # Downselect to # days before and # after
-    startPlotDT = myDT - datetime.timedelta(days=2)
+    startPlotDT = myDT - datetime.timedelta(days=3)
     startStr    = startPlotDT.strftime("%Y-%m-%dT00:00")  
-    endPlotDT   = myDT + datetime.timedelta(days=4)
+    endPlotDT   = myDT + datetime.timedelta(days=9)
     endStr    = endPlotDT.strftime("%Y-%m-%dT23:55")  
 
     # Check if we are going over a year boundary
@@ -804,6 +804,7 @@ def makeplot(saveIt = False):
         axes[9].text(0.05, 0.01, ICEdata[myID][-1], transform = fig.transFigure)  
     if saveIt:  
         figName = figprefix+ICEdata[myID,0].zfill(4) + '_' + myDate[:-3] + myDate[-2:] + figtype
+        print (figFolder+figName)
         plt.savefig(figFolder+figName)
         plt.close()
     else:
