@@ -14,31 +14,35 @@ shadeICE  = True
 plotCats  = True
 plotHSS   = True
 addLabels = True
-saveIt    = True 
+saveIt    = False 
 
 # ICE region colors
 cols = ['r', 'orange', 'b', 'b', 'orange']     
 
 # boundary catalog colors
-catCols = {'ATSB':'Cyan', 'CDAW':'#FCB105', 'DONKI':'Maroon', 'DREAMS':'Magenta', 'GMU1':'#F0E68C', 'GMU2':'Gold', 'H4C':'#9932CC', 'Lepping':'#F39C12', 'RC':'Blue', 'Wind':'Red'}
+catCols = {'ATSB':'Cyan', 'CDAW':'Tomato', 'DONKI':'Maroon', 'DREAMS':'Magenta', 'GMU1':'#F0E68C', 'GMU2':'Gold', 'H4C':'#9932CC', 'Jian':'Maroon', 'Lepping':'#F39C12', 'RC':'Blue', 'Wind':'Red'}
 
 # HSS catalog styles [plot offset, color]
 catStyles = {'G':[-0.1, 'r'] , 'V':[0.,'b'], 'X':[0.,'orange'], 'D':[.1,'maroon']}
 
 # Observation aesthetics
 obsLW = 1.5 # linewidth 
-ACEcol = 'k'
-Windcol = 'gray'
+ACEcol = 'gray'
+Windcol = 'k'
 
 # full names of HSS cats
 fullnames = {'D':'DONKI', 'V':'VARSITI', 'X':'Xystouris', 'G':'Grandin'}    
 
 # The other CME catalogs
-otherData = np.genfromtxt('revICEless.dat', dtype=str)
+#otherData = np.genfromtxt('revICEless.dat', dtype=str)
+otherData = np.genfromtxt('otherCats_1.0.dat', dtype=str)
 totalCMEs = otherData[-1,0]
 # LLAMAICE results which are separate bc more bounds
-ICEdata   = np.genfromtxt('LLAMAICE0.4.csv', delimiter=',', dtype=str)
-
+#ICEdata   = np.genfromtxt('LLAMAICE0.4.csv', delimiter=',', dtype=str)
+ICEdata   = np.genfromtxt('LLAMAICE_1.0.csv', delimiter=',', dtype=str)
+HSSfile = 'HSSsort.dat'
+plotbounds = np.genfromtxt('plotBounds_1.0.dat', dtype=str)
+        
 
 global ICEcase, failCase
 ICEcase = True
@@ -132,8 +136,9 @@ def makeplot(saveIt = False):
             windDataFull = np.concatenate((windDataFull, bonusWind), axis=0)
     elif endPlotDT.year != myDT.year:
         if int(myYr) <= 2022:
-            bonusACE = np.genfromtxt(obsDataPath+'ace5/ace_5min_'+str(int(myYr)+1)+'.dat', dtype=str)
-            aceDataFull = np.concatenate((bonusACE, aceDataFull), axis=0)
+            if hasACE:
+                bonusACE = np.genfromtxt(obsDataPath+'ace5/ace_5min_'+str(int(myYr)+1)+'.dat', dtype=str)
+                aceDataFull = np.concatenate((bonusACE, aceDataFull), axis=0)
             bonusWind = np.genfromtxt(obsDataPath+'wind5/wind_MFISWE_5min_'+str(int(myYr)+1)+'.dat', dtype=str)
             windDataFull = np.concatenate(( windDataFull, bonusWind), axis=0)
 
@@ -233,7 +238,9 @@ def makeplot(saveIt = False):
            
            
         # Save ICE separate
-        ICEbounds = 'LLAMAICE', ICEdata[myID, 2], ICEdata[myID, 3], ICEdata[myID, 4], ICEdata[myID, 5], ICEdata[myID, 6],  ICEdata[myID, 7]
+        # took out the second half of the flux rope but rather than rewriting all of code
+        # just pass the old null value '-' to turn those off
+        ICEbounds = 'LLAMAICE', ICEdata[myID, 2], ICEdata[myID, 3], ICEdata[myID, 4], ICEdata[myID, 5],'-', ICEdata[myID, 6]
 
 
     
@@ -288,7 +295,7 @@ def makeplot(saveIt = False):
     maxFlags = [1000, 300, 300, 300, 90, 360, 4000, 5e6,150, 5e6]
     # set time bound for ICE cases and reset y ranges based on subset of obs data
     if ICEcase:
-        plotbounds = np.genfromtxt('plotBounds.dat', dtype=str)
+        #plotbounds = np.genfromtxt('plotBounds.dat', dtype=str)
         if '-' in CMEchoice:
             thisID = ICEdata[myID,0]
             bidx = np.where(plotbounds[:,0] == thisID)[0]
@@ -470,7 +477,6 @@ def makeplot(saveIt = False):
             axes[i].set_ylim(bounds[i])
     
     else:
-        print ('her')
         pstart = datetime.datetime.strptime(myDate, "%Y-%m-%dT%H:%M" ) - datetime.timedelta(days=1)
         pend   = datetime.datetime.strptime(myDate, "%Y-%m-%dT%H:%M" ) + datetime.timedelta(days=3)
         axes[-1].set_xlim([pstart, pend])
@@ -533,19 +539,21 @@ def makeplot(saveIt = False):
                     ib1 = datetime.datetime.strptime(ICEbounds[3], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
                     axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp )
-                if (ICEbounds[4] != '-') & (ICEbounds[5] != '-'):
+                '''if (ICEbounds[4] != '-') & (ICEbounds[5] != '-'):
                     ib1 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(ICEbounds[5], "%Y-%m-%dT%H:%M" )
                     axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[2], zorder=0, alpha=alp/2 )
                 if (ICEbounds[5] != '-') & (ICEbounds[6] != '-'):
                     ib1 = datetime.datetime.strptime(ICEbounds[5], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(ICEbounds[6], "%Y-%m-%dT%H:%M" )
-                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp )
-                if (ICEbounds[5] == '-') & (ICEbounds[4] != '-') & (ICEbounds[6] != '-'):
+                    axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp )'''
+                #if (ICEbounds[5] == '-') & (ICEbounds[4] != '-') & (ICEbounds[6] != '-'):
+                if (ICEbounds[4] != '-') & (ICEbounds[6] != '-'):
                     ib1 = datetime.datetime.strptime(ICEbounds[4], "%Y-%m-%dT%H:%M" )
                     ib2 = datetime.datetime.strptime(ICEbounds[6], "%Y-%m-%dT%H:%M" )
                     axes[i].fill_between([ib1, ib2], bounds[i][0], bounds[i][1], color=cols[4], zorder=0, alpha=alp)
-        print (ICEbounds[0].rjust(11)  + ICEbounds[1].rjust(23) + ICEbounds[2].rjust(23) + ICEbounds[3].rjust(23)+ ICEbounds[4].rjust(23)+ ICEbounds[5].rjust(23)+ ICEbounds[6].rjust(23))
+        #print (ICEbounds[0].rjust(11)  + ICEbounds[1].rjust(23) + ICEbounds[2].rjust(23) + ICEbounds[3].rjust(23)+ ICEbounds[4].rjust(23)+ ICEbounds[5].rjust(23)+ ICEbounds[6].rjust(23))
+        print (ICEbounds[0].rjust(11)  + ICEbounds[1].rjust(23) + ICEbounds[2].rjust(23) + ICEbounds[3].rjust(23)+ ICEbounds[4].rjust(23)+ ICEbounds[6].rjust(23))
     print('')            
 
 
@@ -554,9 +562,9 @@ def makeplot(saveIt = False):
         alp =  0.07
         # shade in prev case
         if (myID !=0) & shadeICE:
-            prevICE = 'LLAMAICE', ICEdata[myID-1, 2], ICEdata[myID-1, 3], ICEdata[myID-1, 4], ICEdata[myID-1, 5], ICEdata[myID-1, 6], ICEdata[myID-1, 7]
+            prevICE = 'LLAMAICE', ICEdata[myID-1, 2], ICEdata[myID-1, 3], ICEdata[myID-1, 4], ICEdata[myID-1, 5], '-', ICEdata[myID-1, 6]
             if  ICEdata[myID-1, 4] == '-':
-                prevICE = 'LLAMAICE', ICEdata[myID-2, 2], ICEdata[myID-2, 3], ICEdata[myID-2, 4], ICEdata[myID-2, 5], ICEdata[myID-2, 6], ICEdata[myID-2, 7]
+                prevICE = 'LLAMAICE', ICEdata[myID-2, 2], ICEdata[myID-2, 3], ICEdata[myID-2, 4], ICEdata[myID-2, 5], '-', ICEdata[myID-2, 6]
             for i in range(10):
                 if (prevICE[1] != '-') & (prevICE[3] != '-'):
                     if prevICE[2] in ['-', '']:
@@ -607,10 +615,11 @@ def makeplot(saveIt = False):
                     
         
         # shade in next case
-        if (myID != len(ICEdata[:,0])-1) & shadeICE:
-            prevICE = 'LLAMAICE', ICEdata[myID+1, 2], ICEdata[myID+1, 3], ICEdata[myID+1, 4], ICEdata[myID+1, 5], ICEdata[myID+1, 6], ICEdata[myID+1, 7]
+        if (myID != len(ICEdata[:,0])-2) & shadeICE:
+            
+            prevICE = 'LLAMAICE', ICEdata[myID+1, 2], ICEdata[myID+1, 3], ICEdata[myID+1, 4], ICEdata[myID+1, 5], '-', ICEdata[myID+1, 6]
             if  ICEdata[myID+1, 4] == '-':
-                prevICE = 'LLAMAICE', ICEdata[myID+2, 2], ICEdata[myID+2, 3], ICEdata[myID+2, 4], ICEdata[myID+2, 5], ICEdata[myID+2, 6], ICEdata[myID+2, 7]
+                prevICE = 'LLAMAICE', ICEdata[myID+2, 2], ICEdata[myID+2, 3], ICEdata[myID+2, 4], ICEdata[myID+2, 5], '-', ICEdata[myID+2, 6]
             for i in range(10):
                 if (prevICE[1] != '-') & (prevICE[3] != '-'):
                     if prevICE[2] in ['-', '']:
@@ -662,7 +671,7 @@ def makeplot(saveIt = False):
     
     # ============================== Add in HSS flags ============================== 
     if plotHSS:    
-        HSSdata = np.genfromtxt('HSSsort.dat', dtype=str)
+        HSSdata = np.genfromtxt(HSSfile, dtype=str)
     
         yrst = pstart.year
         yrLen = (datetime.datetime(yrst+1,1,1,0,0,0) - datetime.datetime(yrst,1,1,0,0,0)).total_seconds()
@@ -734,14 +743,16 @@ def makeplot(saveIt = False):
                 nowy -= 0.02
             # FR    
             if (ICEbounds[3] != '-'):
+                axes[0].text(0.87, nowy, 'FR', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=cols[2], alpha=0.5, weight='bold') 
+                nowy -= 0.02
                 # check if two part or not
-                if (ICEbounds[5] == '-'):
+                '''if (ICEbounds[5] == '-'):
                     axes[0].text(0.87, nowy, 'FR', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=cols[2], alpha=0.5, weight='bold') 
                     nowy -= 0.02
                 else:
                     axes[0].text(0.87, nowy, 'FR1', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=cols[2], alpha=0.5, weight='bold') 
                     axes[0].text(0.87, nowy-0.02, 'FR2', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=cols[3], alpha=0.5/2, weight='bold') 
-                    nowy -= 0.04
+                    nowy -= 0.04'''
             # mixed at back
             if (ICEbounds[6] != '-'):
                 axes[0].text(0.87, nowy, 'Mixed', horizontalalignment='left', verticalalignment='center', transform =fig.transFigure, color=cols[4], alpha=0.5, weight='bold')
