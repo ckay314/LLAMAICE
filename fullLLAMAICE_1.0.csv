@@ -1,204 +1,204 @@
 #,Friends?,Sheath (t0),Sh/FR mix (t1),FR Start (t2),FR End (t3),Mixed End (t4),HSScat,Comments
-1,2,1995-02-07T18:48,-,1995-02-08T03:21,1995-02-08T21:00,1995-02-09T01:50,-,Perturbed region at back from interaction with trailing event
-2,1,-,1995-02-09T01:50,1995-02-09T07:17,1995-02-10T04:00,-,-,Perturbed region at front from interaction with previous event
-3,-,1995-03-04T00:36,-,1995-03-04T11:23,1995-03-05T00:09,1995-03-05T03:06,-, Shock in the middle of the ejecta around 1995-03-04T20:00 but unclear what is driving it. Mixed region at back where FR becomes more turbulent. SIE
-4,-,-,1995-03-06T02:11,1995-03-06T07:11,1995-03-07T02:23,-,-,Turbulent mixed region at front of FR but no clear pile up ahead
-5,-,1995-03-23T09:45,-,1995-03-23T22:11,1995-03-24T16:11,-,-,Not certain this is a CME but possibly a flank encounter. Probably too slow to be HSS
-6,-,1995-04-01T13:46,-,1995-04-01T16:34,1995-04-02T05:43,-,-,Not certain this is a CME but not obviously anything else. Small pile up ahead but not proper sheath
-7,-,-,1995-04-03T06:43,1995-04-03T12:45,1995-04-04T12:52,-,G,Mixed region where B still FR-like but n/T slightly enhanced
-8,-,-,1995-04-05T07:11,1995-04-05T17:59,1995-04-06T17:15,-,G,Uncertain is CME. T is low and a vague hint of B rotation but no strong signatures
-9,-,-,-,1995-05-13T10:19,1995-05-13T15:47,-,-,
-10,-,1995-06-30T09:21,1995-06-30T14:23,1995-06-30T21:34,1995-07-01T06:59,1995-07-01T12:42,-,
-11,-,-,-,1995-07-01T17:49,1995-07-02T10:26,1995-07-02T16:08,-,
-12,-,1995-08-22T12:56,1995-08-22T19:25,1995-08-22T22:19,1995-08-23T18:43,-,-,
-13,-,-,-,1995-09-15T18:17,1995-09-16T03:09,-,G,Uncertain is a CME but confident in bounds if real
-14,-,-,1995-09-27T09:21,1995-09-27T14:00,1995-09-27T21:00,-,-,Not fully certain is a CME but does appear to contain weak FR
-15,-,1995-10-18T10:40,-,1995-10-18T19:11,1995-10-19T17:54,1995-10-20T01:48,G,Rear mixed region is shocked portion of FR. SIE
+1,2,1995-02-07T18:48,-,1995-02-08T03:21,1995-02-08T21:00,1995-02-09T01:50,-,Y. Perturbed region at back from interaction with trailing event
+2,1,-,1995-02-09T01:50,1995-02-09T07:17,1995-02-10T04:00,-,-,Y.Perturbed region at front from interaction with previous event
+3,-,1995-03-04T00:36,-,1995-03-04T11:23,1995-03-05T00:09,1995-03-05T03:06,-,Y.SIE. Shock inside around 1995-03-04T20:00 but unclear what is driving it. Mixed region at back where FR becomes more turbulent.
+4,-,-,1995-03-06T02:11,1995-03-06T07:11,1995-03-07T02:23,-,-,Y. Turbulent mixed region at front of FR but no clear pile up ahead
+5,-,1995-03-23T09:45,-,1995-03-23T22:11,1995-03-24T16:11,-,-,PY. Not certain this is a CME but possibly a flank encounter. Probably too slow to be HSS
+6,-,1995-04-01T13:46,-,1995-04-01T16:34,1995-04-02T05:43,-,-,M. PU. Not certain this is a CME but not obviously anything else. Small pile up ahead but not proper sheath
+7,-,-,1995-04-03T06:43,1995-04-03T12:45,1995-04-04T12:52,-,G,Y. Mixed region where B still FR-like but n/T slightly enhanced
+8,-,-,1995-04-05T07:11,1995-04-05T17:59,1995-04-06T17:15,-,G,M. Uncertain is CME. T is low and a vague hint of B rotation but no strong signatures
+9,-,-,-,1995-05-13T10:19,1995-05-13T15:47,-,-,Y. 
+10,-,1995-06-30T09:21,1995-06-30T14:23,1995-06-30T21:34,1995-07-01T06:59,1995-07-01T12:42,-,Y. PU.
+11,-,-,-,1995-07-01T17:49,1995-07-02T10:26,1995-07-02T16:08,-,Y.
+12,-,1995-08-22T12:56,1995-08-22T19:25,1995-08-22T22:19,1995-08-23T18:43,-,-,Y.
+13,-,-,-,1995-09-15T18:17,1995-09-16T03:09,-,G,M. Uncertain is a CME but confident in bounds if real
+14,-,-,1995-09-27T09:21,1995-09-27T14:00,1995-09-27T21:00,-,-,PY. Not fully certain is a CME but does appear to contain weak FR
+15,-,1995-10-18T10:40,-,1995-10-18T19:11,1995-10-19T17:54,1995-10-20T01:48,G,Y. SIE. Rear mixed region is shocked portion of FR
 16,-,-,-,-,-,-,-,PN. Back portion might be a small FR or the full thing a weak CS but cannot confidently add
-17,-,-,-,1995-12-02T12:30,1995-12-02T19:31,-,-,Weak but probably a CME
-18,-,1995-12-15T04:39,1995-12-15T14:52,1995-12-16T07:11,1995-12-16T19:11,1995-12-16T22:17,-,Uncertain on front mixed since relatively low beta but unstructured B
-19,-,-,-,1996-02-15T15:07,1996-02-16T03:25,1996-02-16T08:59,-,Possible CS
-20,-,-,-,1996-04-04T12:21,1996-04-04T20:56,-,-,
-21,-,1996-05-16T23:04,-,1996-05-17T01:02,1996-05-17T09:53,1996-05-17T11:06,-,Weak pile up in front of FR
-22,-,1996-05-27T11:59,-,1996-05-27T15:00,1996-05-28T23:14,1996-05-29T07:18,-,Weak pile up in front of FR
-23,-,1996-07-01T13:05,-,1996-07-01T17:16,1996-07-02T08:50,1996-07-02T11:00,X,
-24,-,-,-,1996-07-02T16:50,1996-07-02T22:47,1996-07-03T01:53,GX,
-25,-,-,1996-08-07T08:23,1996-08-07T11:59,1996-08-08T04:59,1996-08-08T10:18,X,
-26,27,-,1996-12-24T01:26,1996-12-24T03:07,1996-12-24T13:41,1996-12-24T16:23,X,Perturbed region at back from interaction with trailing event
-27,26,-,1996-12-24T13:41,1996-12-24T16:23,1996-12-25T11:24,-,-,Perturbed region at front from interaction with previous event
-28,-,1997-01-10T00:52,-,1997-01-10T04:47,1997-01-11T03:06,-,GX,
-29,-,1997-02-09T12:50,1997-02-09T16:16,1997-02-10T02:52,1997-02-10T18:28,-,X,There might be an additional FR in the mixed region but cannot confidently confirm
+17,-,-,-,1995-12-02T12:30,1995-12-02T19:31,-,-,PY. Weak but probably a CME
+18,-,1995-12-15T04:39,1995-12-15T14:52,1995-12-16T07:11,1995-12-16T19:11,1995-12-16T22:17,-,Y. Uncertain on front mixed versus CS since relatively low beta but unstructured B
+19,-,-,-,1996-02-15T15:07,1996-02-16T03:25,1996-02-16T08:59,-,M. Possible CS but not generally confident
+20,-,-,-,1996-04-04T12:21,1996-04-04T20:56,-,-,Y.
+21,-,1996-05-16T23:04,-,1996-05-17T01:02,1996-05-17T09:53,1996-05-17T11:06,-,Y. PU. Weak pile up in front of FR
+22,-,1996-05-27T11:59,-,1996-05-27T15:00,1996-05-28T23:14,1996-05-29T07:18,-,Y. PU. Weak pile up in front of FR
+23,-,1996-07-01T13:05,-,1996-07-01T17:16,1996-07-02T08:50,1996-07-02T11:00,X, Y. 
+24,-,-,-,1996-07-02T16:50,1996-07-02T22:47,1996-07-03T01:53,GX,PY.
+25,-,-,1996-08-07T08:23,1996-08-07T11:59,1996-08-08T04:59,1996-08-08T10:18,X, Y.
+26,27,-,1996-12-24T01:26,1996-12-24T03:07,1996-12-24T13:41,1996-12-24T16:23,X,PY. Perturbed region at back from interaction with trailing event
+27,26,-,1996-12-24T13:41,1996-12-24T16:23,1996-12-25T11:24,-,-,PY. Perturbed region at front from interaction with previous event
+28,-,1997-01-10T00:52,-,1997-01-10T04:47,1997-01-11T03:06,-,GX,Y.
+29,-,1997-02-09T12:50,1997-02-09T16:16,1997-02-10T02:52,1997-02-10T18:28,-,X,Y.There might be an additional FR in the mixed region but cannot confidently confirm
 30,-,-,-,-,-,-,-,PN. Cannot confidently add
-31,-,1997-04-11T04:44,1997-04-11T06:00,1997-04-11T08:18,1997-04-11T14:56,1997-04-11T19:00,X,Suspect sheath is only small pile up in front of FR
-32,-,1997-04-21T10:11,-,1997-04-21T15:42,1997-04-23T01:40,1997-04-23T10:30,X,Bounds generally uncertain in messy event
-33,34,1997-05-15T01:15,-,1997-05-15T10:00,1997-05-15T23:29,1997-05-16T03:13,GX, Flux rope in sheath between about 5:00 and 7:30 on 15 May. Perturbed region at back from interaction with trailing event. SFRIS
-34,33,-,1997-05-16T03:13,1997-05-16T06:01,1997-05-16T13:26,1997-05-16T15:55,G,Perturbed region at front from interaction with previous event
-35,-,1997-05-26T09:09,-,1997-05-26T16:12,1997-05-28T00:00,-,-,FR separated into front region with rotating followed by extended region/leg starting at 1997-05-27T06:20
-36,-,-,-,1997-06-09T06:18,1997-06-09T23:01,-,X,Probably at least one FR in this time span but very uncertain
-37,-,1997-06-19T00:32,-,1997-06-19T05:31,1997-06-20T22:29,-,X,Small pile up in front but not particularly hot or turbulent like sheath. Possible leg encounter at 1997-06-19T15:54
-38,-,1997-07-15T03:10,1997-07-15T06:11,1997-07-15T09:00,1997-07-16T11:00,-,-,
-39,-,1997-08-03T10:10,1997-08-03T13:00,1997-08-03T14:18,1997-08-04T02:07,-,X, Split between sheath/mix/FR uncertain
-40,-,-,1997-08-17T04:50,1997-08-17T05:35,1997-08-17T17:26,1997-08-17T19:33,X,No clear pile up ahead of FR
-41,-,1997-09-03T08:38,-,1997-09-03T13:26,1997-09-03T20:41,1997-09-04T00:09,GX,Mix immediatedly followed by SIR/HSS. Uncertain on sheath start
-42,-,1997-09-18T00:30,-,1997-09-18T04:07,1997-09-20T12:30,-,X,Cannot confidently split. CS
-43,-,1997-09-21T16:51,1997-09-21T22:21,1997-09-22T01:30,1997-09-22T12:20,1997-09-22T17:46,X,Sheath start unclear since messy
-44,-,1997-10-01T01:41,1997-10-01T11:45,1997-10-01T17:00,1997-10-02T23:00,-,X,Messy and uncertain and made worse by plasma data gaps
-45,-,1997-10-10T16:12,-,1997-10-10T22:00,1997-10-11T14:33,1997-10-12T02:18,X,Might have additional small CME upstream
-46,-,-,1997-10-27T06:14,1997-10-27T10:35,1997-10-28T04:57,-,X,Messy and uncertain
-47,-,1997-11-06T22:25,-,1997-11-07T04:00,1997-11-08T19:23,-,X,FR is compound structure. Probably 2 or 3 separate small events. Sheath could even be weak ugly FR. CS
-48,-,1997-11-22T09:12,1997-11-22T15:13,1997-11-22T18:51,1997-11-23T12:50,1997-11-23T19:00,X,Back region where interacting with HSS
-49,-,-,-,1997-11-24T06:51,1997-11-25T00:00,1997-11-25T07:53,-,Embedded in HSS and not directly interacting with upstream CME
-50,51,1997-12-10T04:33,-,1997-12-10T18:39,1997-12-11T10:14,1997-12-11T11:58,X,Might have SFRIS but cannot confidently add
-51,50,-,1997-12-11T11:58,1997-12-11T13:15,1997-12-11T23:52,-,-,Not certain is full separate event from previous case
-52,-,1997-12-30T01:13,-,1997-12-30T09:35,1997-12-31T06:45,1997-12-31T11:00,X,Possible leg encounter at 1997-12-30T17:18
-53,54,1998-01-06T13:29,1998-01-06T22:50,1998-01-07T02:23,1998-01-08T07:28,1998-01-08T14:10,X,
-54,53,-,1998-01-08T14:10,1998-01-08T15:49,1998-01-08T21:11,1998-01-08T23:52,X,
-55,-,-,-,1998-01-09T08:23,1998-01-09T20:38,-,-,
-56,57,-,-,1998-01-20T17:43,1998-01-21T04:00,-,X,
-57,56,-,1998-01-21T04:00,1998-01-21T07:00,1998-01-22T13:26,1998-01-22T13:26,-,Mixed region where interacting with previous. CS
-58,-,1998-01-28T16:00,1998-01-29T20:00,1998-01-29T23:04,1998-01-30T23:08,1998-01-31T02:08,-,Clear flux rope but specific bounds uncertain. Might have SFRIS starting at 29 Jan 13:00.
-59,-,-,-,1998-02-02T13:13,1998-02-04T00:00,1998-02-04T02:22,X,Probable SIE and possible CS depending where SIE is (set at 04 Feb 00:00 but could be at 02 Feb 12:30; team undecided). There is a trailing event but it is rather slow.
-60,-,1998-02-04T00:00,-,1998-02-04T04:48,1998-02-05T22:30,1998-02-06T08:04,X, SIP (team undecided where). Back mixed bounds uncertain
-61,-,1998-02-17T06:28,-,1998-02-17T10:23,1998-02-18T07:50,1998-02-18T14:52,-,PU SIE
-62,-,1998-02-18T07:50,1998-02-18T14:52,1998-02-18T21:35,1998-02-20T00:29,-,X,SIP sheath is shocked portion of upstream
-63,-,1998-03-04T11:02,-,1998-03-04T14:38,1998-03-05T20:29,1998-03-06T07:10,X,
-64,-,1998-03-06T11:59,1998-03-06T15:28,1998-03-06T22:17,1998-03-07T16:48,-,-,Split between sheath and mixed uncertain
-65,-,-,1998-03-25T10:48,1998-03-25T16:12,1998-03-26T09:11,1998-03-26T10:00,-,Potential SFRIM1
-66,67,-,1998-03-31T05:58,1998-03-31T11:59,1998-04-01T16:18,1998-04-01T18:51,-,Extent of back interaction region uncertain
-67,66,-,1998-04-01T18:51,1998-04-01T23:29,1998-04-02T16:41,1998-04-02T19:55,-,
-68,-,-,-,1998-04-11T23:00,1998-04-13T18:00,-,X,Uncertain is actually a CME
-69,70,1998-05-01T21:21,1998-05-02T03:37,1998-05-02T11:49,1998-05-03T16:47,1998-05-04T05:02,X,SIE
-70,69; 70,1998-05-04T02:21,1998-05-04T09:50,1998-05-04T11:42,1998-05-05T01:52,1998-05-05T05:06,X,SIP
-71,70,-,1998-05-05T05:06,1998-05-05T07:03,1998-05-07T22:49,-,X,Interacting with prev. CS
-72,-,1998-06-02T08:00,-,1998-06-02T10:28,1998-06-02T16:43,1998-06-02T19:00,X,PU
-73,-,1998-06-13T19:25,1998-06-13T22:03,1998-06-14T02:21,1998-06-15T03:19,1998-06-15T06:00,X,Uncertain how to interpret sheath/front mixed regions.
-74,75,-,1998-06-24T10:00,1998-06-24T13:26,1998-06-25T16:03,1998-06-25T23:28,X,Back mixed region is shocked by next. SIE
-75,74,-,1998-06-25T16:03,1998-06-25T23:28,1998-06-26T19:39,-,-,SIP
-76,77,-,-,1998-07-06T06:00,1998-07-07T14:06,-,X,Probably CME but uncertain. Cannot confidently label upstream feature as sheath and not SIR/HSS.
-77,76,-,1998-07-07T14:06,1998-07-07T15:20,1998-07-09T05:56,-,-,Either weak big CME or just extension of HSS tail
-78,-,-,-,1998-07-10T23:00,1998-07-12T22:39,-,X,Cannot confidently split and bounds uncertain. CS
-79,-,-,-,1998-08-01T08:20,1998-08-03T10:30,-,X,Cannot confidently split and bounds uncertain. CS
-80,-,-,-,-,-,-,-, There is a weak T signature and some sort of features/rotation/enhancement in the back half of the RC bounds but cannot confidently include
-81,-,-,1998-08-07T11:00,1998-08-08T02:19,1998-08-09T13:19,1998-08-10T00:31,X,Guessing on splits
-82,-,-,-,1998-08-10T00:31,1998-08-10T23:30,-,X, Cannot confidently split. CS
-83,-,-,-,1998-08-12T01:00,1998-08-13T14:00,-,-,Cannot confidently split and might not be CME. CS
-84,-,1998-08-19T18:40,1998-08-20T05:28,1998-08-20T09:11,1998-08-21T19:18,-,-,Sheath region could alternatively be messy upstream CME
-85,-,1998-08-26T06:51,1998-08-26T22:00,1998-08-27T05:38,1998-08-27T19:59,1998-08-28T00:45,X,
-86,-,-,1998-09-23T01:12,1998-09-23T04:00,1998-09-23T14:39,1998-09-23T17:51,X,
-87,-,1998-09-24T23:18,1998-09-25T01:22,1998-09-25T06:16,1998-09-26T09:58,1998-09-26T16:28,X,
-88,-,-,-,-,-,-,GX, Likely driverless shock. Unclear if glancing encounter of a CME-driven sheath or a HSS. DLS
-89,-,1998-10-18T19:30,-,1998-10-19T04:19,1998-10-20T07:01,-,GX,
-90,-,1998-10-23T12:57,1998-10-23T16:11,1998-10-23T19:55,1998-10-24T19:02,-,X,Could be CS but too weak to really tell
-91,92,1998-11-07T08:15,-,1998-11-07T22:21,1998-11-08T04:41,1998-11-08T08:08,X,SIE. Might have SFRIS but not confident.
-92,91;93,1998-11-08T04:51,1998-11-08T23:48,1998-11-09T03:45,1998-11-10T01:48,1998-11-10T05:51,-,Bound between sheath and M1 uncertain. SIP
-93,92,1998-11-13T02:00,-,1998-11-13T04:30,1998-11-14T06:44,1998-11-14T10:15,G,Sheath is PU. Uncertain overall. Could be CS or just ugly event.
-94,-,1998-11-30T05:06,-,1998-11-30T10:08,1998-12-01T04:00,-,X,Very uncertain overall
+31,-,1997-04-11T04:44,1997-04-11T06:00,1997-04-11T08:18,1997-04-11T14:56,1997-04-11T19:00,X,Y. PU.
+32,-,1997-04-21T10:11,-,1997-04-21T15:42,1997-04-23T01:40,1997-04-23T10:30,X,Y. Bounds generally uncertain in messy event
+33,34,1997-05-15T01:15,-,1997-05-15T10:00,1997-05-15T23:29,1997-05-16T03:13,GX, Y. SFRIS. FR in sheath between about 5:00 and 7:30 on 15 May. Perturbed region at back from interaction with trailing event
+34,33,-,1997-05-16T03:13,1997-05-16T06:01,1997-05-16T13:26,1997-05-16T15:55,G,Y. Perturbed region at front from interaction with previous event
+35,-,1997-05-26T09:09,-,1997-05-26T16:12,1997-05-28T00:00,-,-,Y. Possible SFRIS. Main FR separated into front region with rotating followed by extended region/leg starting at 1997-05-27T06:20
+36,-,-,-,1997-06-09T06:18,1997-06-09T23:01,-,X,PY. Probably at least one FR in this time span but very uncertain
+37,-,1997-06-19T00:32,-,1997-06-19T05:31,1997-06-20T22:29,-,X,Y. PU. Small pile up in front but not particularly hot or turbulent like sheath. Possible leg encounter at 1997-06-19T15:54
+38,-,1997-07-15T03:10,1997-07-15T06:11,1997-07-15T09:00,1997-07-16T11:00,-,-,Y. PU. Very uncertain on sheath/pile up boundary
+39,-,1997-08-03T10:10,1997-08-03T13:00,1997-08-03T14:18,1997-08-04T02:07,-,X, Y. Boundaries between sheath/mix/FR uncertain
+40,-,-,1997-08-17T04:50,1997-08-17T05:35,1997-08-17T17:26,1997-08-17T19:33,X,PY. No clear pile up ahead of FR
+41,-,1997-09-03T08:38,-,1997-09-03T13:26,1997-09-03T20:41,1997-09-04T00:09,GX,Y. Mix immediatedly followed by SIR/HSS. Uncertain on sheath start
+42,-,1997-09-18T00:30,-,1997-09-18T04:07,1997-09-20T12:30,-,X,PY. CS. Cannot confidently split into smaller components
+43,-,1997-09-21T16:51,1997-09-21T22:21,1997-09-22T01:30,1997-09-22T12:20,1997-09-22T17:46,X,Y. Sheath start very uncertain since messy
+44,-,1997-10-01T01:41,1997-10-01T11:45,1997-10-01T17:00,1997-10-02T23:00,-,X,M. Messy and uncertain and made worse by plasma data gaps
+45,-,1997-10-10T16:12,-,1997-10-10T22:00,1997-10-11T14:33,1997-10-12T02:18,X,Y. Might have additional small CME upstream but not confident enough to add
+46,-,-,1997-10-27T06:14,1997-10-27T10:35,1997-10-28T04:57,-,X,PY. Messy and uncertain
+47,-,1997-11-06T22:25,-,1997-11-07T04:00,1997-11-08T19:23,-,X,Y.CS. Probably 2 or 3 separate small events. Sheath could even be weak ugly FR.
+48,-,1997-11-22T09:12,1997-11-22T15:13,1997-11-22T18:51,1997-11-23T12:50,1997-11-23T19:00,X,Y. HSS. Back region interacting with HSS
+49,-,-,-,1997-11-24T06:51,1997-11-25T00:00,1997-11-25T07:53,-,PY. Embedded in HSS and not directly interacting with upstream CME
+50,51,1997-12-10T04:33,-,1997-12-10T18:39,1997-12-11T10:14,1997-12-11T11:58,X,Y. Might have SFRIS but cannot confidently add
+51,50,-,1997-12-11T11:58,1997-12-11T13:15,1997-12-11T23:52,-,-,M. Not certain is full separate event from previous case
+52,-,1997-12-30T01:13,-,1997-12-30T09:35,1997-12-31T06:45,1997-12-31T11:00,X,PY. Possible leg encounter at 1997-12-30T17:18
+53,54,1998-01-06T13:29,1998-01-06T22:50,1998-01-07T02:23,1998-01-08T07:28,1998-01-08T14:10,X,Y.
+54,53,-,1998-01-08T14:10,1998-01-08T15:49,1998-01-08T21:11,1998-01-08T23:52,X,Y.
+55,-,-,-,1998-01-09T08:23,1998-01-09T20:38,-,-,M. Not confident is anything
+56,57,-,-,1998-01-20T17:43,1998-01-21T04:00,-,X,PY. 
+57,56,-,1998-01-21T04:00,1998-01-21T07:00,1998-01-22T13:26,1998-01-22T13:26,-,Y. CS. Mixed region where interacting with previous
+58,-,1998-01-28T16:00,1998-01-29T20:00,1998-01-29T23:04,1998-01-30T23:08,1998-01-31T02:08,-,Y. Clear flux rope but specific bounds uncertain. Might have SFRIS starting at 29 Jan 13:00.
+59,-,-,-,1998-02-02T13:13,1998-02-04T00:00,1998-02-04T02:22,X,M. Probable SIE and possible CS depending where SIE is (set at 04 Feb 00:00 but could be at 02 Feb 12:30; team undecided). There is a trailing event but it is rather slow.
+60,-,1998-02-04T00:00,-,1998-02-04T04:48,1998-02-05T22:30,1998-02-06T08:04,X, Y. SIP (team undecided where). Back mixed bounds uncertain
+61,-,1998-02-17T06:28,-,1998-02-17T10:23,1998-02-18T07:50,1998-02-18T14:52,-,Y. PU. SIE
+62,-,1998-02-18T07:50,1998-02-18T14:52,1998-02-18T21:35,1998-02-20T00:29,-,X,PY. SIP. Sheath is shocked portion of upstream
+63,-,1998-03-04T11:02,-,1998-03-04T14:38,1998-03-05T20:29,1998-03-06T07:10,X, Y.
+64,-,1998-03-06T11:59,1998-03-06T15:28,1998-03-06T22:17,1998-03-07T16:48,-,-,Y. Split between sheath and mixed uncertain
+65,-,-,1998-03-25T10:48,1998-03-25T16:12,1998-03-26T09:11,1998-03-26T10:00,-,Y. Potential SFR in mixed
+66,67,-,1998-03-31T05:58,1998-03-31T11:59,1998-04-01T16:18,1998-04-01T18:51,-,PY. Extent of back interaction region uncertain
+67,66,-,1998-04-01T18:51,1998-04-01T23:29,1998-04-02T16:41,1998-04-02T19:55,-,PY.
+68,-,-,-,1998-04-11T23:00,1998-04-13T18:00,-,X,M. Uncertain is actually a CME. Maybe weak CS.
+69,70,1998-05-01T21:21,1998-05-02T03:37,1998-05-02T11:49,1998-05-03T16:47,1998-05-04T05:02,X,Y. SIE 
+70,69; 70,1998-05-04T02:21,1998-05-04T09:50,1998-05-04T11:42,1998-05-05T01:52,1998-05-05T05:06,X,PY. SIP
+71,70,-,1998-05-05T05:06,1998-05-05T07:03,1998-05-07T22:49,-,X,PY. CS. Interacting with previous
+72,-,1998-06-02T08:00,-,1998-06-02T10:28,1998-06-02T16:43,1998-06-02T19:00,X,Y. PU
+73,-,1998-06-13T19:25,1998-06-13T22:03,1998-06-14T02:21,1998-06-15T03:19,1998-06-15T06:00,X,Y. Uncertain how to interpret sheath/front mixed regions.
+74,75,-,1998-06-24T10:00,1998-06-24T13:26,1998-06-25T16:03,1998-06-25T23:28,X, Y. SIE. Back mixed region is shocked by next
+75,74,-,1998-06-25T16:03,1998-06-25T23:28,1998-06-26T19:39,-,-,PY. SIP
+76,77,-,-,1998-07-06T06:00,1998-07-07T14:06,-,X,PY. Not certain. Cannot confidently label upstream feature as sheath and not SIR/HSS.
+77,76,-,1998-07-07T14:06,1998-07-07T15:20,1998-07-09T05:56,-,-,M. Either weak big CME or just extension of HSS tail
+78,-,-,-,1998-07-10T23:00,1998-07-12T22:39,-,X,PY. CS. Cannot confidently split and bounds uncertain
+79,-,-,-,1998-08-01T08:20,1998-08-03T10:30,-,X,PY. CS. Cannot confidently split and bounds uncertain
+80,-,-,-,-,-,-,-, PN. There is a weak T signature and some sort of features/rotation/enhancement in the back half of the RC bounds but cannot confidently include
+81,-,-,1998-08-07T11:00,1998-08-08T02:19,1998-08-09T13:19,1998-08-10T00:31,X,Y. Guessing on splits
+82,-,-,-,1998-08-10T00:31,1998-08-10T23:30,-,X, PY. CS. Cannot confidently split
+83,-,-,-,1998-08-12T01:00,1998-08-13T14:00,-,-,M. CS. Cannot confidently split and might not be CME
+84,-,1998-08-19T18:40,1998-08-20T05:28,1998-08-20T09:11,1998-08-21T19:18,-,-,Y. Sheath region could alternatively be messy upstream CME
+85,-,1998-08-26T06:51,1998-08-26T22:00,1998-08-27T05:38,1998-08-27T19:59,1998-08-28T00:45,X, Y.
+86,-,-,1998-09-23T01:12,1998-09-23T04:00,1998-09-23T14:39,1998-09-23T17:51,X,Y.
+87,-,1998-09-24T23:18,1998-09-25T01:22,1998-09-25T06:16,1998-09-26T09:58,1998-09-26T16:28,X, Y. 
+88,-,-,-,-,-,-,GX,N. DLS. Likely driverless shock. Unclear if glancing encounter of a CME-driven sheath or a HSS
+89,-,1998-10-18T19:30,-,1998-10-19T04:19,1998-10-20T07:01,-,GX, Y. 
+90,-,1998-10-23T12:57,1998-10-23T16:11,1998-10-23T19:55,1998-10-24T19:02,-,X,PY. Could be CS but too weak to really tell
+91,92,1998-11-07T08:15,-,1998-11-07T22:21,1998-11-08T04:41,1998-11-08T08:08,X,PY. SIE. Might have SFRIS but not confident.
+92,91;93,1998-11-08T04:51,1998-11-08T23:48,1998-11-09T03:45,1998-11-10T01:48,1998-11-10T05:51,-,Y. SIP. Bound between sheath and M1 uncertain
+93,92,1998-11-13T02:00,-,1998-11-13T04:30,1998-11-14T06:44,1998-11-14T10:15,G,M. PU. Uncertain overall. Could be CS or just ugly event.
+94,-,1998-11-30T05:06,-,1998-11-30T10:08,1998-12-01T04:00,-,X,M.Very uncertain overall
 95,-,-,-,-,-,-,-,PN. Cannot confidently add
-96,-,-,-,-,-,-,X,Cannot confidently add bounds. Some regions of low beta but would be very large but very weak.
-97,-,-,-,-,-,-,-,There might be a small FR after 04 Jan 15:00 but cannot confidently add
-98,-,-,-,1999-01-13T16:05,1999-01-13T23:00,-,GX,Suspect is small FR embedded in SIR
-99,-,1999-01-22T20:24,-,1999-01-23T05:37,1999-01-23T18:00,-,X,Generally uncertain
-100,-,-,-,-,-,-,GX,Cannot confidently add bounds
-101,-,-,-,-,-,-,GX,A bit of a T signature but cannot confidently add bounds
-102,103,-,-,1999-02-16T15:40,1999-02-17T07:09,1999-02-17T10:00,X,SIE. Weak encounter if real
-103,102; 101,1999-02-17T07:09,-,1999-02-17T12:23,1999-02-18T02:46,1999-02-18T07:34,X,SI; SIE. Shocked back to sheath split uncertain
-104,103;105,1999-02-18T02:48,1999-02-18T10:30,1999-02-18T14:18,1999-02-19T08:15,1999-02-19T12:18,X,
-105,104,1999-02-19T12:18,1999-02-19T17:15,1999-02-19T23:49,1999-02-20T18:34,-,-,Guessing is sheath until next but not certain
-106,-,1999-03-10T01:30,1999-03-10T11:52,1999-03-10T18:18,1999-03-12T02:00,-,GX,Wind is drunk
-107,-,-,1999-03-19T09:43,1999-03-19T12:21,1999-03-20T06:09,1999-03-20T13:13,X,Messy and guessing especially on mixed
-108,-,1999-04-16T11:25,1999-04-16T15:21,1999-04-16T22:04,1999-04-17T19:00,1999-04-17T20:45,-,Guessing on front mixed and not splitting up FR
-109,-,1999-04-20T16:00,1999-04-21T04:53,1999-04-21T12:37,1999-04-22T14:00,-,X,Don't know how much to trust Wind B when plasma is bad
-110,-,-,-,-,-,-,GX,Long T signature but not much else. Might just be HSS tail?
-111,-,-,-,1999-05-28T21:50,1999-05-29T11:21,-,-,Not confident is thing
-112,-,-,1999-06-02T23:00,1999-06-03T00:31,1999-06-03T22:00,-,X,
-113,-,1999-06-26T02:31,-,1999-06-26T06:00,1999-06-26T19:25,-,X,Think stuff behind is all too turbulent for FR and is HSS?
-114,115,1999-07-02T00:59,1999-07-02T23:07,1999-07-03T08:09,1999-07-05T13:57,1999-07-05T21:00,X,
-115,114; 116,-,-,1999-07-05T21:00,1999-07-06T14:24,1999-07-06T18:38,X,Could split FR?
-116,115; 117,1999-07-06T14:24,-,1999-07-06T21:36,1999-07-07T17:02,1999-07-08T03:42,X,Front FR could be mixed instead?
-117,-,-,-,1999-07-08T03:42,1999-07-08T22:11,-,-,Not sure what this is. Kind of smooth and rot B but still turbulent and not much T drop
+96,-,-,-,-,-,-,X,PN. Cannot confidently add bounds. Some regions of low beta but would be very large but very weak.
+97,-,-,-,-,-,-,-,PN. There might be a small FR after 04 Jan 15:00 but cannot confidently add
+98,-,-,-,1999-01-13T16:05,1999-01-13T23:00,-,GX,M. Suspect is small FR embedded in SIR
+99,-,1999-01-22T20:24,-,1999-01-23T05:37,1999-01-23T18:00,-,X,PY. Generally uncertain
+100,-,-,-,-,-,-,GX,PN. Cannot confidently add bounds
+101,-,-,-,-,-,-,GX,PN. A bit of a T signature but cannot confidently add bounds
+102,-,-,-,-,-,-,X,PN. Cannot confidently add bounds
+103,104,1999-02-17T07:09,-,1999-02-17T12:23,1999-02-18T02:46,1999-02-18T07:34,X,SI; M. PU. Weak PU at front. Not certain is anything
+104,103;105,1999-02-18T02:48,1999-02-18T10:30,1999-02-18T14:18,1999-02-19T08:15,1999-02-19T12:18,X,Y.
+105,104,1999-02-19T12:18,1999-02-19T17:15,1999-02-19T23:49,1999-02-20T18:34,-,-,Y. Guessing is sheath until next but not certain
+106,-,1999-03-10T01:30,1999-03-10T11:52,1999-03-10T18:18,1999-03-12T02:00,-,GX,M. Clear pile up but difficult to interpret with data gaps
+107,-,-,1999-03-19T09:43,1999-03-19T12:21,1999-03-20T06:09,1999-03-20T13:13,X,M. Messy and guessing especially on mixed 
+108,-,1999-04-16T11:25,1999-04-16T15:21,1999-04-16T22:04,1999-04-17T19:00,1999-04-17T20:45,-,Y. PU. Guessing on front mixed 
+109,-,1999-04-20T16:00,1999-04-21T04:53,1999-04-21T12:37,1999-04-22T14:00,-,X, Y. Don't know how much to trust Wind B when plasma is bad
+110,-,-,-,-,-,-,GX,PN. Long T signature but not much else. Might just be HSS tail?
+111,-,-,-,1999-05-28T21:50,1999-05-29T11:21,-,-,M. Not confident is thing
+112,-,-,1999-06-02T23:00,1999-06-03T00:31,1999-06-03T22:00,-,X, PY. 
+113,-,1999-06-26T02:31,-,1999-06-26T06:00,1999-06-26T19:25,-,X,PY. Think stuff behind is all too turbulent for FR and is HSS?
+114,115,1999-07-02T00:59,1999-07-02T23:07,1999-07-03T08:09,1999-07-05T13:57,1999-07-05T21:00,X, PY. Possible flank encounter
+115,114; 116,-,-,1999-07-05T21:00,1999-07-06T14:24,1999-07-06T18:38,X,M. SIE. Weak but is low beta
+116,115; 117,1999-07-06T14:24,-,1999-07-06T21:36,1999-07-07T17:02,1999-07-08T03:42,X,Y. CS. Interpretation uncertain
+117,-,-,-,1999-07-08T03:42,1999-07-08T22:11,-,-,PY. Not sure since smooth and rot B but still turbulent and not much T drop
 118,-,-,-,-,-,-,-,PN. Cannot confidently add
-119,-,1999-07-26T23:51,-,1999-07-27T16:05,1999-07-29T09:56,-,X,Ugly FR. Could add mixed on both ends but hard to say where
-120,121,1999-07-30T19:12,-,1999-07-31T02:02,1999-07-31T18:00,1999-07-31T20:22,X,Micro FR in sheath? Confusing messy case
-121,120; 122,-,1999-07-31T20:22,1999-08-01T04:14,1999-08-02T04:12,1999-08-02T11:00,-,Sheath or just some sort of mixed region in front?
-122,121,-,1999-08-02T15:36,1999-08-02T18:55,1999-08-03T03:08,1999-08-03T10:39,-,Guessing on mixed bounds
+119,-,1999-07-26T23:51,-,1999-07-27T16:05,1999-07-29T09:56,-,X,M. CS. Not certain but possibly weak CS.
+120,121,1999-07-30T19:12,-,1999-07-31T02:02,1999-07-31T18:00,1999-07-31T20:22,X,PY. Confusing messy case
+121,120,-,1999-07-31T20:22,1999-08-01T04:14,1999-08-02T04:12,1999-08-02T11:00,-,Y. Sheath or just some sort of mixed region in front?
+122,,-,-,-,-,-,-,M. Might be weak CS but cannot confidently add
 123,-,-,-,-,-,-,-,PN. Cannot confidently add
 124,-,-,-,-,-,-,X,PN. Think this is HSS
-125,-,1999-08-08T18:18,1999-08-09T04:52,1999-08-09T10:19,1999-08-10T10:45,1999-08-10T16:15,X,
-126,-,1999-08-12T04:59,1999-08-12T12:32,1999-08-12T21:50,1999-08-14T00:00,-,X,Add mixed at back?
-127,-,-,-,1999-08-21T15:18,1999-08-22T22:23,1999-08-23T10:40,X,Weak FR signatures. Might be real. Might just be HSS tail
-128,-,1999-09-15T07:44,-,1999-09-15T08:40,1999-09-15T17:30,-,X,Some B enhancement but not much else
-129,130,-,-,1999-09-21T20:25,1999-09-22T12:09,-,X,Too slow (comp to background) to form sheath?
-130,129,1999-09-22T12:09,1999-09-22T19:00,1999-09-22T23:24,1999-09-24T02:33,-,X,Mixed/FR bounds hard to place. Possible leg encounter at 1999-09-23T09:35
-131,-,1999-10-21T02:19,1999-10-21T04:41,1999-10-21T09:22,1999-10-22T03:19,1999-10-22T06:38,X,Could split FR?
-132,-,-,-,-,-,-,X,Forms no sheath since in fast wind? Could just be HSS tail?
-133,-,-,-,-,-,-,GX,Not sure is thing. Lots of data gaps and suspicious Wind. Made minimal guess
-134,135,-,1999-11-22T00:00,1999-11-22T04:42,1999-11-22T14:13,-,X,
-135,134; 136,-,-,1999-11-23T06:52,1999-11-23T19:44,-,-,
-136,135,-,1999-11-23T19:44,1999-11-23T20:19,1999-11-24T07:39,-,-,Basing sheath on T
-137,138,1999-12-12T15:50,1999-12-12T17:31,1999-12-12T20:11,1999-12-13T17:29,1999-12-13T23:00,X,
-138,137,-,1999-12-13T23:00,1999-12-14T04:00,1999-12-14T19:31,-,X,Mostly going on T
-139,-,-,-,-,-,-,X,Cannot say this is a thing
-140,-,1999-12-26T22:39,-,1999-12-27T10:25,1999-12-28T04:39,-,X,Generally uncertain
-141,-,2000-01-22T13:58,-,2000-01-22T17:00,2000-01-23T01:45,2000-01-23T03:48,X,FR from T sig
-142,143,2000-02-11T02:35,-,2000-02-11T08:17,2000-02-11T23:31,2000-02-12T02:55,X,
-143,142,2000-02-11T23:31,-,2000-02-12T12:20,2000-02-13T00:35,-,-,
-144,-,2000-02-14T07:11,-,2000-02-14T14:11,2000-02-15T15:33,-,-,
-145,-,2000-02-20T21:03,2000-02-21T05:00,2000-02-21T13:21,2000-02-22T12:14,2000-02-22T14:46,X,Could split FR?
-146,147,2000-03-01T01:58,-,2000-03-01T03:34,2000-03-01T18:58,-,X,
-147,146,-,2000-03-01T18:58,2000-03-01T20:16,2000-03-02T03:05,2000-03-02T05:13,-,
-148,149,-,2000-03-18T22:00,2000-03-19T03:55,2000-03-19T12:17,2000-03-19T15:40,X,
-149,148,-,2000-03-19T15:40,2000-03-19T17:49,2000-03-20T05:35,-,X,See T sig but not much else
-150,151,2000-03-28T02:52,-,2000-03-28T11:16,2000-03-29T11:00,2000-03-29T19:00,X,
-151,150; 152,2000-03-29T11:00,-,2000-03-29T23:44,2000-03-30T14:35,-,X,Not sure what back mixed is. Actually mixed or FR2 or just HSS?
-152,151,2000-03-30T14:35,2000-03-30T23:04,2000-03-31T03:09,2000-03-31T23:00,2000-04-01T11:17,X,
+125,-,1999-08-08T18:18,1999-08-09T04:52,1999-08-09T10:19,1999-08-10T10:45,1999-08-10T16:15,X,Y. SFRIS. 
+126,-,1999-08-12T04:59,1999-08-12T12:32,1999-08-12T21:50,1999-08-14T00:00,-,X,M. Front very uncertain. Possibly CS/SFRIS or just messy front.
+127,-,-,-,1999-08-21T15:18,1999-08-22T22:23,1999-08-23T10:40,X,M. Weak FR signatures. Might be real. Might just be HSS tail
+128,-,1999-09-15T07:44,-,1999-09-15T08:40,1999-09-15T17:30,-,X,PY. Some B enhancement but not much else
+129,130,-,-,1999-09-21T20:25,1999-09-22T12:09,-,X,M. Not confident. Too slow for pile up
+130,129,1999-09-22T12:09,1999-09-22T19:00,1999-09-22T23:24,1999-09-24T02:33,-,X,PY. CS. Mixed/FR bounds hard to place. Possible leg encounter at 1999-09-23T09:35
+131,-,1999-10-21T02:19,1999-10-21T04:41,1999-10-21T09:22,1999-10-22T03:19,1999-10-22T06:38,X,PY. CS. Messy event
+132,-,-,-,-,-,-,X,PN. Cannot confidently add
+133,-,-,-,-,-,-,GX,PN. Cannot confidently add
+134,135,-,1999-11-22T00:00,1999-11-22T04:42,1999-11-22T14:13,-,X,PY. Splitting from trailing bc of extended higher beta
+135,134; 136,-,-,1999-11-23T06:52,1999-11-23T19:44,-,-,Y. Splitting from trailing at small region of enhanced T from interaction
+136,135,-,1999-11-23T19:44,1999-11-23T20:19,1999-11-24T07:39,-,-,Y. Basing sheath on T. 
+137,138,1999-12-12T15:50,1999-12-12T17:31,1999-12-12T20:11,1999-12-13T17:29,1999-12-13T23:00,X, Y. Uncertain on back mixed
+138,137,-,1999-12-13T23:00,1999-12-14T04:00,1999-12-14T19:31,-,X,PY. Mostly going on T. Mixed is a complete guess
+139,-,-,-,-,-,-,X,PN. Cannot say this is a thing
+140,-,1999-12-26T22:39,-,1999-12-27T10:25,1999-12-28T04:39,-,X, M. Generally uncertain with missing data. Possible CS
+141,-,2000-01-22T13:58,-,2000-01-22T17:00,2000-01-23T01:45,2000-01-23T03:48,X,PY.FR from T sig. Very certain on sheath but went with slight v/T enhancement
+142,143,2000-02-11T02:35,-,2000-02-11T08:17,2000-02-11T23:31,2000-02-12T02:55,X, M. SIE. Weak CS if anythong
+143,142,2000-02-11T23:31,-,2000-02-12T12:20,2000-02-13T00:35,-,-, PY. Sheath interpretation very uncertain.  Could be CS or SFRIS.
+144,-,2000-02-14T07:11,-,2000-02-14T14:11,2000-02-15T15:33,-,-, M. Potential weak CS.
+145,-,2000-02-20T21:03,2000-02-21T05:00,2000-02-21T13:21,2000-02-22T12:14,2000-02-22T14:46,X,Y. CS.
+146,147,2000-03-01T01:58,-,2000-03-01T03:34,2000-03-01T18:58,-,X, Y. PU. Back mixed is interaction region between cases
+147,146,-,2000-03-01T18:58,2000-03-01T20:16,2000-03-02T03:05,2000-03-02T05:13,-, PY. Probably separate from previous but not certain
+148,149,-,2000-03-18T22:00,2000-03-19T03:55,2000-03-19T12:17,2000-03-19T15:40,X, PY. Uncertain on extent of mixed regions.
+149,148,-,2000-03-19T15:40,2000-03-19T17:49,2000-03-20T05:35,-,X,M. See T sig but not much else
+150,151,2000-03-28T02:52,-,2000-03-28T11:16,2000-03-29T11:00,2000-03-29T19:00,X,Y. PU. Not sure on PU/mixed at front
+151,150; 152,2000-03-29T11:00,-,2000-03-29T23:44,2000-03-30T14:35,-,X,Y. Attempted to split off at clear beta jump
+152,151,2000-03-30T14:35,2000-03-30T23:04,2000-03-31T03:09,2000-03-31T23:00,2000-04-01T11:17,X,PY. Uncertain on mixed regions.
 153,-,-,-,-,-,-,-,PN. Cannot confidently add
-154,-,2000-04-06T16:39,2000-04-07T06:48,2000-04-07T13:33,2000-04-08T06:00,-,X,Weak and uncertain. Could be nothing/HSS but there is T sig
-155,-,2000-04-18T19:32,-,2000-04-18T20:33,2000-04-19T15:00,-,X, PU. CS. At least two events interacting. Probably a split near ~4:00 on 19 Apr but cannot ID exact bound
-156,-,2000-04-24T03:31,-,2000-04-24T04:26,2000-04-24T13:39,-,X,CS/SIE?. Either a CS or SIE but cannot be certain
-157,-,-,-,-,-,-,X,At best is a driverless shock but cannot be certain on any bounds
-158,-,-,-,2000-05-07T00:00,2000-05-08T11:59,-,-,CS. Likely a CS but bounds uncertain. Likely split between events around 18:00 on 7 May
-159,-,-,2000-05-13T17:00,2000-05-14T02:36,2000-05-14T13:27,2000-05-14T18:00,X,Weak event
-160,-,-,-,2000-05-15T19:00,2000-05-16T14:00,-,X,CS. Likely a weak CS but not certain.
-161,-,-,-,-,-,-,X,Might be a weak short event but cannot confidently add any bounds
-162,-,-,-,-,-,-,X,Might be a weak event but cannot confidently add any bounds
-163,-,-,-,-,-,-,-,Probably just HSS
-164,-,2000-06-04T15:02,-,2000-06-04T19:17,2000-06-06T23:41,-,X,CS. Probably CS but boundaries uncertain
-165,-,2000-06-08T09:07,2000-06-08T13:01,2000-06-08T16:47,2000-06-10T01:18,2000-06-10T06:00,X,Guessing at back end based on ACE.
-166,-,-,2000-06-11T08:01,2000-06-11T09:23,2000-06-11T17:29,-,X,Weak event
-167,-,2000-06-12T22:08,-,2000-06-13T03:24,2000-06-14T06:00,-,GX,CS. Probably weak CS but uncertain if even event and on bounds
-168,-,-,-,-,-,-,X,Might be a weak event but cannot confidently add any bounds
-169,170,2000-06-23T12:45,2000-06-24T01:26,2000-06-24T07:32,2000-06-25T20:18,2000-06-26T00:43,X,Sheath/mixed split uncertain
-170,169,-,-,2000-06-26T00:43,2000-06-27T00:00,-,X,CS. Probably a CS but not certain
-171,-,2000-07-01T01:54,-,2000-07-01T08:24,2000-07-03T10:18,-,-,CS. Probably a CS but not certain
-172,173,2000-07-10T06:00,-,2000-07-11T02:00,2000-07-11T12:09,2000-07-11T14:32,X,SIE. Most likely a long weak sheath followed by glancing encounter then all the following structures
-173,172; 174,2000-07-11T12:09,2000-07-11T14:32,2000-07-11T22:35,2000-07-13T03:51,2000-07-13T09:42,-,SIP. Could potentially split into more structres or CS/SFRIS but hard to confidently break up
-174,173,2000-07-13T09:42,-,2000-07-13T15:35,2000-07-14T15:32,2000-07-14T17:53,-,
-175,-,-,-,-,-,-,-,Might be a weak event but cannot confidently add any bounds
-176,-,-,-,-,-,-,-,Might be a weak event but cannot confidently add any bounds
-177,-,2000-07-15T14:23,-,2000-07-15T19:53,2000-07-17T08:00,-,-,Probably a core and leg encounter
-178,-,2000-07-19T15:27,-,2000-07-19T21:20,2000-07-21T07:04,-,-,CS. Separation from shock to start of FR/CS uncertain
-179,180,2000-07-23T09:50,2000-07-23T15:00,2000-07-23T19:20,2000-07-26T04:10,2000-07-26T18:57,X,CS. Ugly event and might have SIE where back mixed starts
-180,179; 181,2000-07-26T18:57,2000-07-27T02:00,2000-07-27T08:28,2000-07-27T20:53,2000-07-28T10:05,X,SIE. Back portion is shocked by next event
-181,180,2000-07-28T06:38,-,2000-07-28T13:03,2000-07-29T10:12,2000-07-29T18:12,X,CS; SIE. Split between interaction region and sheath and CS start uncertain
-182,-,2000-07-31T19:28,-,2000-07-31T23:28,2000-08-01T13:11,2000-08-01T17:03,-,PU.Weak event
-183,184,2000-08-10T05:13,-,2000-08-10T20:52,2000-08-11T18:43,2000-08-11T22:08,X,Glancing encounter
-184,183,2000-08-11T18:43,-,2000-08-12T05:31,2000-08-13T23:00,-,X,SFRIS. Probably a core and leg encounter
-185,-,-,-,2000-09-02T23:29,2000-09-03T13:00,2000-09-03T22:52,X,Exact bounds on back mixed uncertain
-186,187,-,-,2000-09-04T13:03,2000-09-06T17:02,2000-09-06T20:38,-,CS.SIE. Probably CS but bounds uncertain
-187,186,2000-09-06T17:02,-,2000-09-06T20:55,2000-09-07T12:41,-,X,SIE.Sheath is shocked region of upstream event
-188,-,-,-,-,-,-,X,Cannot confidently add any bounds
-189,-,2000-09-17T16:04,-,2000-09-17T23:26,2000-09-19T07:21,2000-09-19T12:00,X,Uncertain bounds and probably interacting with HSS
-190,191,-,-,2000-10-03T01:01,2000-10-05T03:34,2000-10-05T06:27,X,SIE;CS. Probably a big CS but hard to split up
-191,190,2000-10-05T03:34,2000-10-05T06:27,2000-10-05T11:02,2000-10-07T11:00,-,X,SIP;CS. Uncertain on splitting up
-192,-,2000-10-12T22:28,-,2000-10-13T05:55,2000-10-14T15:30,2000-10-14T19:12,GX,CS. CS with at least one split around 16:00 on 13 Oct.
-193,-,2000-10-28T09:27,-,2000-10-28T20:38,2000-10-29T23:22,2000-10-30T02:42,X,SFRIS. Probably SFRIS
-194,-,2000-11-06T09:30,-,2000-11-06T13:26,2000-11-08T09:59,-,X,CS. Back bound uncertain
-195,-,-,-,-,-,-,X,Might be a weak event but cannot confidently add any bounds
-196,197,2000-11-10T06:20,-,2000-11-10T11:02,2000-11-11T04:00,-,X,Probably core then leg and gets mixed by end but cannot draw bound.
-197,196,2000-11-11T04:00,2000-11-11T07:42,2000-11-11T10:17,2000-11-12T00:00,-,-,Bounds on front mixed region uncertain
-198,199,2000-11-26T05:30,-,2000-11-26T20:08,2000-11-28T05:29,2000-11-28T08:19,X,CS;SIE. Complete guess on splitting. Interaction region at back
-199,198,2000-11-28T05:29,-,2000-11-28T12:00,2000-11-29T20:58,-,-,CS. Guess at sheath/interaction region split
-200,-,2000-12-03T03:54,-,2000-12-03T13:07,2000-12-05T07:12,-,X,CS. Uncertain on bounds
+154,-,2000-04-06T16:39,2000-04-07T06:48,2000-04-07T13:33,2000-04-08T06:00,-,X,M. Weak and uncertain. Could be nothing/HSS but there is T sig
+155,-,2000-04-18T19:32,-,2000-04-18T20:33,2000-04-19T15:00,-,X, PY. PU. CS. At least two events interacting. Probably a split near ~4:00 on 19 Apr but cannot ID exact bound
+156,-,2000-04-24T03:31,-,2000-04-24T04:26,2000-04-24T13:39,-,X,PY. Either a CS or SIE but cannot be certain
+157,-,-,-,-,-,-,X,PN. At best is a driverless shock but cannot be certain on any bounds
+158,-,-,-,2000-05-07T00:00,2000-05-08T11:59,-,-,PY. CS. Likely a CS but bounds uncertain. Likely split between events around 18:00 on 7 May
+159,-,-,2000-05-13T17:00,2000-05-14T02:36,2000-05-14T13:27,2000-05-14T18:00,X,PY. Weak event
+160,-,-,-,2000-05-15T19:00,2000-05-16T14:00,-,X,M. CS. Likely a weak CS but not certain.
+161,-,-,-,-,-,-,X,M. Might be a weak short event but cannot confidently add any bounds
+162,-,-,-,-,-,-,X,PN. Might be a weak event but cannot confidently add any bounds
+163,-,-,-,-,-,-,-,PN. Probably just HSS
+164,-,2000-06-04T15:02,-,2000-06-04T19:17,2000-06-06T23:41,-,X,M. CS. Probably CS but boundaries uncertain
+165,-,2000-06-08T09:07,2000-06-08T13:01,2000-06-08T16:47,2000-06-10T01:18,2000-06-10T06:00,X,Y. Guessing at back end based on ACE.
+166,-,-,2000-06-11T08:01,2000-06-11T09:23,2000-06-11T17:29,-,X,PY. Weak event
+167,-,2000-06-12T22:08,-,2000-06-13T03:24,2000-06-14T06:00,-,GX,M. CS. Probably weak CS but uncertain if even event and on bounds
+168,-,-,-,-,-,-,X,M. Might be a weak event but cannot confidently add any bounds
+169,170,2000-06-23T12:45,2000-06-24T01:26,2000-06-24T07:32,2000-06-25T20:18,2000-06-26T00:43,X,Y. Sheath/mixed split uncertain
+170,169,-,-,2000-06-26T00:43,2000-06-27T00:00,-,X,CS. M. Probably a CS but not certain
+171,-,2000-07-01T01:54,-,2000-07-01T08:24,2000-07-03T10:18,-,-,M. CS. Probably a CS but not certain
+172,173,2000-07-10T06:00,-,2000-07-11T02:00,2000-07-11T12:09,2000-07-11T14:32,X,PY. SIE. Most likely a long weak sheath followed by glancing encounter then all the following structures
+173,172; 174,2000-07-11T12:09,2000-07-11T14:32,2000-07-11T22:35,2000-07-13T03:51,2000-07-13T09:42,-,Y. SIP. Could potentially split into more structres or CS/SFRIS but hard to confidently break up
+174,173,2000-07-13T09:42,-,2000-07-13T15:35,2000-07-14T15:32,2000-07-14T17:53,-,Y.
+175,-,-,-,-,-,-,-,PN. Might be a weak event but cannot confidently add any bounds
+176,-,-,-,-,-,-,-,M. Might be a weak event but cannot confidently add any bounds
+177,-,2000-07-15T14:23,-,2000-07-15T19:53,2000-07-17T08:00,-,-,Y. Probably a core and leg encounter
+178,-,2000-07-19T15:27,-,2000-07-19T21:20,2000-07-21T07:04,-,-,Y. CS. Separation from shock to start of FR/CS uncertain
+179,180,2000-07-23T09:50,2000-07-23T15:00,2000-07-23T19:20,2000-07-26T04:10,2000-07-26T18:57,X,PY. CS. Ugly event and might have SIE where back mixed starts
+180,179; 181,2000-07-26T18:57,2000-07-27T02:00,2000-07-27T08:28,2000-07-27T20:53,2000-07-28T10:05,X,Y. SIE. Back portion is shocked by next event
+181,180,2000-07-28T06:38,-,2000-07-28T13:03,2000-07-29T10:12,2000-07-29T18:12,X,Y. CS; SIP. Split between interaction region and sheath and CS start uncertain
+182,-,2000-07-31T19:28,-,2000-07-31T23:28,2000-08-01T13:11,2000-08-01T17:03,-,Y. PU.Weak event
+183,184,2000-08-10T05:13,-,2000-08-10T20:52,2000-08-11T18:43,2000-08-11T22:08,X,Y. SIE. Glancing encounter
+184,183,2000-08-11T18:43,-,2000-08-12T05:31,2000-08-13T23:00,-,X,Y. SFRIS. Probably a core and leg encounter
+185,-,-,-,2000-09-02T23:29,2000-09-03T13:00,2000-09-03T22:52,X,PY. Exact bounds on back mixed uncertain
+186,187,-,-,2000-09-04T13:03,2000-09-06T17:02,2000-09-06T20:38,-,PY. CS.SIE. Probably CS but bounds uncertain
+187,186,2000-09-06T17:02,-,2000-09-06T20:55,2000-09-07T12:41,-,X,PY. SIP.Sheath is shocked region of upstream event
+188,-,-,-,-,-,-,X,PN. Cannot confidently add any bounds
+189,-,2000-09-17T16:04,-,2000-09-17T23:26,2000-09-19T07:21,2000-09-19T12:00,X,Y.Uncertain bounds and probably interacting with HSS
+190,191,-,-,2000-10-03T01:01,2000-10-05T03:34,2000-10-05T06:27,X,Y. SIE. CS. Probably a big CS but hard to split up
+191,190,2000-10-05T03:34,2000-10-05T06:27,2000-10-05T11:02,2000-10-07T11:00,-,X,Y. SIP. CS. Uncertain on splitting up
+192,-,2000-10-12T22:28,-,2000-10-13T05:55,2000-10-14T15:30,2000-10-14T19:12,GX,Y. CS. CS with at least one split around 16:00 on 13 Oct.
+193,-,2000-10-28T09:27,-,2000-10-28T20:38,2000-10-29T23:22,2000-10-30T02:42,X,Y. Possible SFRIS
+194,-,2000-11-06T09:30,-,2000-11-06T13:26,2000-11-08T09:59,-,X,Y. CS. Back bound uncertain
+195,-,-,-,-,-,-,X,PN. Might be a weak event but cannot confidently add any bounds
+196,197,2000-11-10T06:20,-,2000-11-10T11:02,2000-11-11T04:00,-,X,PY. Probably core then leg and gets mixed by end but cannot draw bound.
+197,196,2000-11-11T04:00,2000-11-11T07:42,2000-11-11T10:17,2000-11-12T00:00,-,-,PY. Bounds on front mixed region uncertain
+198,199,2000-11-26T05:30,-,2000-11-26T20:08,2000-11-28T05:29,2000-11-28T08:19,X,PY. CS. SIE. Complete guess on splitting. Interaction region at back
+199,198,2000-11-28T05:29,-,2000-11-28T12:00,2000-11-29T20:58,-,-,PY. CS. Guess at sheath/interaction region split
+200,-,2000-12-03T03:54,-,2000-12-03T13:07,2000-12-05T07:12,-,X,PY. CS. Uncertain on bounds
 201,202,2000-12-21T13:01,2000-12-22T02:04,2000-12-22T08:12,2000-12-22T16:25,2000-12-22T21:01,-,PY. Being compressed from behind. Not very confident on the bouns of the weak sheath and mixed regions
 202,201,2000-12-22T19:41,2000-12-22T22:49,2000-12-23T00:50,2000-12-23T11:56,-,-,Y. Uncertain on spliting from prev
 203,-,-,-,-,-,-,-,PN. Cannot confidently add
